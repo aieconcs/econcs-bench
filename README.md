@@ -1,10 +1,8 @@
 # econcs-bench
 
-Benchmark suite of open research challenges in Economics and Computation (EconCS). This repository is associated with the [EconCS Workshop](https://sites.google.com/corp/view/aieconcs26/).
+Benchmark suite of open research challenges in Economics and Computation (EconCS). This repository is associated with the workshop on [AI-Driven Research in EconCS](https://sites.google.com/corp/view/aieconcs26/) held at [EC 2026](https://ec26.sigecom.org/).
 
 ## Benchmark Problems
-
-Below is the list of open research challenges included in this benchmark suite, along with their contributors:
 
 | Problem Name | Contributor | Folder / Details |
 | :--- | :--- | :--- |
