@@ -1,5 +1,6 @@
 ---
 name: **Multi Unit DSIC**
+contributor: Noam Nisan
 ---
 
 **\#\# Dominant-Strategy Incentive-Compatible Mechanisms for Multiunit Auctions**

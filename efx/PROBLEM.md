@@ -1,5 +1,6 @@
 ---
 name: **EFX**
+contributor: Simina Branzei
 ---
 
 **\#\# Envy-Freeness up to Any Good (EFX): Approximations, Charity, and Chores**

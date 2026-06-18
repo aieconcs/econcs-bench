@@ -1,5 +1,6 @@
 ---
 name: Online Submodular Welfare  in Random Order
+contributor: Vahab Mirrokni
 ---
 
 **\#\# Online Submodular Welfare Maximization in Random Order: Breaking the $1/2$ Barrier**

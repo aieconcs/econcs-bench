@@ -1,5 +1,6 @@
 ---
 name: **Meaning of a Game**
+contributor: Christos Papadimitriou
 ---
 
 **\#\# Computing the Meaning of a Game**

@@ -1,5 +1,6 @@
 ---
 name: **Deterministic Subadditive CA**
+contributor: Shahar Dobzinski
 ---
 
 **\#\# Deterministic Incentive-Compatible Mechanisms for Combinatorial Auctions when Bidders have Subadditive Valuations**
