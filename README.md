@@ -24,3 +24,4 @@ Benchmark suite of open research challenges in Economics and Computation (EconCS
 | Revelation Gap: Pricing from One Sample for MHR Revenue | Jason Hartline | [revelation-gap-mhr-pricing](revelation-gap-mhr-pricing/PROBLEM.md) |
 | Revelation Gap: Public-Budget Welfare Maximization | Jason Hartline | [revelation-gap-public-budget-welfare](revelation-gap-public-budget-welfare/PROBLEM.md) |
 | MMS Approximation and Truthful Fair Allocation | Moshe Babaioff | [mms-approximation-and-truthful-fair-allocation](mms-approximation-and-truthful-fair-allocation/PROBLEM.md) |
+| Existence of PMMS and Epistemic PMMS for Additive Valuations | Michal Feldman | [existence-of-pmms-and-epistemic-pmms-for-additive-valuations](existence-of-pmms-and-epistemic-pmms-for-additive-valuations/PROBLEM.md) |
