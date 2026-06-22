@@ -20,6 +20,7 @@ Benchmark suite of open research challenges in Economics and Computation (EconCS
 | Query Complexity of Tarski Fixed Points | Aviad Rubinstein | [query-complexity-of-tarski](query-complexity-of-tarski/PROBLEM.md) |
 | Computing the Meaning of a Game | Christos Papadimitriou | [meaning-of-a-game](meaning-of-a-game/PROBLEM.md) |
 | Optimal Deterministic Budget-Balanced Mechanisms (Solved!) | Vincent Conitzer | [optimal-deterministic-budget-balanced-mechanisms](optimal-deterministic-budget-balanced-mechanisms/PROBLEM.md) |
-| Signal-Preserving 2/3-Approximation for Explainable Linear Information Design | Yiling Chen | [signal-preserving-explainable-information-design](signal-preserving-explainable-information-design/PROBLEM.md) |
+| Signal-Preserving 2/3-Approximation for Explainable Linear Information Design | Yiling Chen and Tao Lin | [signal-preserving-explainable-information-design](signal-preserving-explainable-information-design/PROBLEM.md) |
 | Revelation Gap: Pricing from One Sample for MHR Revenue | Jason Hartline | [revelation-gap-mhr-pricing](revelation-gap-mhr-pricing/PROBLEM.md) |
 | Revelation Gap: Public-Budget Welfare Maximization | Jason Hartline | [revelation-gap-public-budget-welfare](revelation-gap-public-budget-welfare/PROBLEM.md) |
+| MMS Approximation and Truthful Fair Allocation | Moshe Babaioff | [mms-approximation-and-truthful-fair-allocation](mms-approximation-and-truthful-fair-allocation/PROBLEM.md) |

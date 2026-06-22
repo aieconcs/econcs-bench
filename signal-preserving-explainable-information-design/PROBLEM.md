@@ -1,6 +1,6 @@
 ---
 name: Signal-Preserving 2/3-Approximation for Explainable Linear Information Design
-contributor: Yiling Chen
+contributor: Yiling Chen and Tao Lin
 ---
 
 # Signal-Preserving 2/3-Approximation for Explainable Linear Information Design
