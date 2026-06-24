@@ -1,5 +1,5 @@
 ---
-name: **Query Complexity of Tarski**
+name: Query Complexity of Tarski
 contributor: Aviad Rubinstein
 ---
 

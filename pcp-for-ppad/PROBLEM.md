@@ -1,5 +1,5 @@
 ---
-name: **PCP for PPAD**
+name: PCP for PPAD
 contributor: Aviad Rubinstein
 ---
 

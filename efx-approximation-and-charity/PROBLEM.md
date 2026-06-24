@@ -1,5 +1,5 @@
 ---
-name: **EFX**
+name: EFX Approximation and Charity
 contributor: Simina Branzei
 ---
 
@@ -33,10 +33,8 @@ Because exact EFX allocations are not guaranteed to exist for all valuation clas
 
 **\*\*Positive Results and Algorithms:\*\***
 
-- Exact EFX allocations are guaranteed to exist for any number of agents with identical valuations, and for 3 agents with additive valuations (Chaudhury, Garg, and Mehlhorn, 2024).
 - $1/2$-EFX allocations exist for subadditive valuations (Plaut and Roughgarden, 2020).
 - For additive valuations, an exact EFX allocation exists that leaves at most $n-2$ items unallocated to charity (Berger et al., 2022). The existence of $(1-\varepsilon)$-EFX allocations with $O((n/\varepsilon)^{1/2})$ charity for additive valuations has also been established (Akrami et al., 2024).
-- Simulated annealing finds exact EFX allocations for additive valuations with random instances in experiments.
 
 **\*\*Impossibility Results:\*\***
 
@@ -55,9 +53,7 @@ Even though there are now counterexamples demonstrating that exact EFX allocatio
 
 (2) **\*\*Minimizing Charity\*\***: Design an allocation mechanism that guarantees exact EFX while strictly bounding the number of items given to charity. What is the theoretical minimum number of items that must be given to charity to achieve EFX for submodular valuations?
 
-(3) **\*\*The Additive Frontier\*\***: Do exact EFX allocations always exist for the canonical case of additive valuations for $n\geq 4$ agents? The existing counterexamples explicitly rely on submodular/subadditive complementarities.
-
-(4) **\*\*EFX for Chores\*\***: Translate these existence questions and approximation barriers to the domain of indivisible chores. Do exact EFX allocations exist for chores under additive costs? What is the best possible approximation ratio $\alpha$, and what is the minimal charity required to reach exact EFX for chores?
+(3) **\*\*EFX for Chores\*\***: Translate these existence questions and approximation barriers to the domain of indivisible chores. Do exact EFX allocations exist for chores under additive costs? What is the best possible approximation ratio $\alpha$, and what is the minimal charity required to reach exact EFX for chores?
 
 **\#\#\# Key References**
 

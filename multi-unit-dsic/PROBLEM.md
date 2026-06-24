@@ -1,5 +1,5 @@
 ---
-name: **Multi Unit DSIC**
+name: Multi Unit DSIC
 contributor: Noam Nisan
 ---
 

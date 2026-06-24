@@ -20,7 +20,9 @@ Benchmark suite of open research challenges in Economics and Computation (EconCS
 | Signal-Preserving 2/3-Approximation for Explainable Linear Information Design | Yiling Chen and Tao Lin | [signal-preserving-explainable-information-design](signal-preserving-explainable-information-design/PROBLEM.md) |
 | MMS Approximation and Truthful Fair Allocation | Moshe Babaioff | [mms-approximation-and-truthful-fair-allocation](mms-approximation-and-truthful-fair-allocation/PROBLEM.md) |
 | Existence of PMMS and Epistemic PMMS for Additive Valuations | Michal Feldman | [existence-of-pmms-and-epistemic-pmms-for-additive-valuations](existence-of-pmms-and-epistemic-pmms-for-additive-valuations/PROBLEM.md) |
-| EFX | Simina Branzei | [efx](efx/PROBLEM.md) |
+| EFX for Additive Valuations | Simina Branzei and Ariel Procaccia | [efx-additive-existence](efx-additive-existence/PROBLEM.md) |
+| EFX Approximation and Charity | Simina Branzei | [efx-approximation-and-charity](efx-approximation-and-charity/PROBLEM.md) |
+| Complexity of Envy-Free Cake Cutting | Ariel Procaccia | [envy-free-cake-cutting-complexity](envy-free-cake-cutting-complexity/PROBLEM.md) |
 | Prophet Inequality for Subadditive CA | Paul Duetting | [prophet-inequality-for-subadditive-ca](prophet-inequality-for-subadditive-ca/PROBLEM.md) |
 | Truthful Mechanism for Submodular CA | Sebastien Lahaie | [truthful-mechanism-for-submodular-ca](truthful-mechanism-for-submodular-ca/PROBLEM.md) |
 | Submodular Welfare Maximization with Demand Oracle | Renato Paes Leme | [submodular-welfare-maximization-with-demand-oracle](submodular-welfare-maximization-with-demand-oracle/PROBLEM.md) |

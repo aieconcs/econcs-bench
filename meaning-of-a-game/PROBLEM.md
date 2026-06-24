@@ -1,5 +1,5 @@
 ---
-name: **Meaning of a Game**
+name: Meaning of a Game
 contributor: Christos Papadimitriou
 ---
 

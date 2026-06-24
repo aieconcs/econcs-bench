@@ -1,5 +1,5 @@
 ---
-name: **Deterministic Subadditive CA**
+name: Deterministic Subadditive CA
 contributor: Shahar Dobzinski
 ---
 
