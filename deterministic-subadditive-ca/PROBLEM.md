@@ -3,20 +3,20 @@ name: Deterministic Subadditive CA
 contributor: Shahar Dobzinski
 ---
 
-**\#\# Deterministic Incentive-Compatible Mechanisms for Combinatorial Auctions when Bidders have Subadditive Valuations**
+## Deterministic Incentive-Compatible Mechanisms for Combinatorial Auctions when Bidders have Subadditive Valuations
 
-**\#\#\# Problem Description**
+### Problem Description
 
-**\#\#\#\# Basic Setting**
+#### Basic Setting
 
-In a **\*\*combinatorial auction\*\*** $m$ indivisible items are being auctioned among
-$n$ bidders.  Each bidder $i$ has a **\*\*valuation function\*\*** $v_i : 2^M
+In a **combinatorial auction** $m$ indivisible items are being auctioned among
+$n$ bidders.  Each bidder $i$ has a **valuation function** $v_i : 2^M
 \rightarrow R$. Each valuation function is monotone (for each item j and bundle
 S, v\_i(S+{j})\\geq v\_i(S)) and normalized (v\_i(\\emptyset)=0). The goal is to find
 an allocation $(S_1, S_2, …, S_n)$ (if i\\neq j then S\_i\\cap S\_j=\\emptyset) that
-maximizes **\*\*social welfare\*\***, $\sum_i v_i(S_i)$.
+maximizes **social welfare**, $\sum_i v_i(S_i)$.
 
-**\#\#\#\# Model of Computation**
+#### Model of Computation
 
 Our main interest is in the communication complexity model where we count the
 number of bits the bidders need to transfer in order to determine the output. We
@@ -24,10 +24,10 @@ are interested in algorithms with communication complexity poly(m,n).
 
 We consider only deterministic mechanisms.
 
-**\#\#\#\# Incentive Compatibility**
+#### Incentive Compatibility
 
-We are looking for a \*\*deterministic, dominant strategy incentive compatible
-(DSIC) mechanism\*\*.  A deterministic mechanism $M$ receives as input the
+We are looking for a **deterministic, dominant strategy incentive compatible
+(DSIC) mechanism**.  A deterministic mechanism $M$ receives as input the
 valuations $v_1…v_n$ and produces as output an allocation $(S_1…S_n)$ and
 payments $p_1…p_n$ that the participants pay.  DSIC means that for every player
 $i$, every valuation $v_i$ of player $i$, every possible valuations of the other
@@ -37,9 +37,9 @@ $(v_i,v_{-i})$ and denote by $(S’_i, p’_i)$ the outcome of the mechanism for
 player $i$ on inputs $(v’_i,v_{-i})$ then we have $v_i(S_i)-p_i \ge
 v_i(S’_i)-p’_i$.
 
-**\#\#\# What is known**
+### What is known
 
-**\#\#\#\# Computational Status**
+#### Computational Status
 
 Ignoring incentive issues, Feige (2006) provides a 2-approximation algorithm for
 this problem (that is, always finds a solution with social welfare at least half
@@ -47,15 +47,15 @@ of the optimal social welfare). For every constant epsilon\>0, an approximation
 ratio of 2-epsilon requires exponential communication (Dobzinski, Nisan,
 Schapira, 2005)..
 
-**\#\#\#\# Possibility Results**
+#### Possibility Results
 
 *   Dobzinski, Nisan, and Schapira (2005) provide a deterministic DSIC mechanism
    that provides an approximation ratio of O(sqrt(m)).
 *   Qiu and Weinberg (2024) improve this ratio to O(sqrt(m/log m)).
 
-**\#\#\#\# Impossibility Results**
+#### Impossibility Results
 
-*   Dobzinski (2016) suggests the notion of **\*\*taxation complexity\*\*** of DSIC
+*   Dobzinski (2016) suggests the notion of **taxation complexity** of DSIC
    mechanisms and shows two ways of proving impossibilities: one for two
    players using simultaneous communication, and the other by showing that the
    taxation complexity is a lower bound on the communication complexity and
@@ -72,13 +72,13 @@ Schapira, 2005)..
    three-player mechanisms. However, the class of valuations they use also
    includes non-subadditive valuations.
 
-**\#\#\# Research Goal**
+### Research Goal
 
 Prove or disprove: there is a deterministic DSIC mechanism for combinatorial
 auctions that uses poly(m,n) communication and achieves an approximation ratio
 of 2\.
 
-**\#\#\# Key References**
+### Key References
 
 *   Shahar Dobzinski: Computational Efficiency Requires Simple Taxation. FOCS
    2016: 209-218

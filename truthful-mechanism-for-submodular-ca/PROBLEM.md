@@ -3,31 +3,31 @@ name: Truthful Mechanism for Submodular CA
 contributor: Sebastien Lahaie
 ---
 
-**\#\# Truthful Mechanism for Submodular Combinatorial Auctions: Closing the Gap to $O(\log \log m)$**
+## Truthful Mechanism for Submodular Combinatorial Auctions: Closing the Gap to $O(\log \log m)$
 
-**\#\#\# Problem Description**
+### Problem Description
 
-In a **\*\*combinatorial auction\*\***, there is a set $M$ of $m$ indivisible items and a set $N$ of $n$ bidders. Each bidder $i \in N$ has a **\*\*monotone submodular\*\*** valuation function $v_i : 2^M \to \mathbb{R}_{\geq 0}$ with $v_i(\emptyset) = 0$, satisfying:
-- **\*\*Monotonicity\*\***: $v_i(S) \leq v_i(T)$ for all $S \subseteq T \subseteq M$.
-- **\*\*Submodularity (diminishing returns)\*\***: $v_i(S \cup \{j\}) - v_i(S) \geq v_i(T \cup \{j\}) - v_i(T)$ for all $S \subseteq T \subseteq M$ and $j \notin T$.
+In a **combinatorial auction**, there is a set $M$ of $m$ indivisible items and a set $N$ of $n$ bidders. Each bidder $i \in N$ has a **monotone submodular** valuation function $v_i : 2^M \to \mathbb{R}_{\geq 0}$ with $v_i(\emptyset) = 0$, satisfying:
+- **Monotonicity**: $v_i(S) \leq v_i(T)$ for all $S \subseteq T \subseteq M$.
+- **Submodularity (diminishing returns)**: $v_i(S \cup \{j\}) - v_i(S) \geq v_i(T \cup \{j\}) - v_i(T)$ for all $S \subseteq T \subseteq M$ and $j \notin T$.
 
-The goal is to find an allocation $(S_1, S_2, \ldots, S_n)$ that is a partition of the items among the bidders, maximizing the **\*\*social welfare\*\***:
+The goal is to find an allocation $(S_1, S_2, \ldots, S_n)$ that is a partition of the items among the bidders, maximizing the **social welfare**:
 
 $$
 \text{maximize} \quad \sum_{i=1}^n v_i(S_i).
 $$
 
-The valuations are private information of the bidders, accessed through **\*\*demand oracle queries\*\***: given a price vector $p \in \mathbb{R}^m_{\geq 0}$, the oracle for bidder $i$ returns $S^* \in \arg\max_{S \subseteq M} \left(v_i(S) - \sum_{j \in S} p_j\right)$.
+The valuations are private information of the bidders, accessed through **demand oracle queries**: given a price vector $p \in \mathbb{R}^m_{\geq 0}$, the oracle for bidder $i$ returns $S^* \in \arg\max_{S \subseteq M} \left(v_i(S) - \sum_{j \in S} p_j\right)$.
 
-A mechanism is **\*\*(universally) truthful\*\*** if it is a probability distribution over deterministic truthful mechanisms—i.e., no bidder can improve their outcome by misreporting their valuation, regardless of the mechanism's random coins.
+A mechanism is **(universally) truthful** if it is a probability distribution over deterministic truthful mechanisms—i.e., no bidder can improve their outcome by misreporting their valuation, regardless of the mechanism's random coins.
 
-The **\*\*approximation ratio\*\*** of a truthful mechanism is the worst-case ratio between the expected social welfare achieved by the mechanism and the optimal social welfare $\text{OPT} = \max_{(S_1, \ldots, S_n)} \sum_{i=1}^n v_i(S_i)$.
+The **approximation ratio** of a truthful mechanism is the worst-case ratio between the expected social welfare achieved by the mechanism and the optimal social welfare $\text{OPT} = \max_{(S_1, \ldots, S_n)} \sum_{i=1}^n v_i(S_i)$.
 
-**\#\#\# Known Results**
+### Known Results
 
-- **\*\*Non-Truthful Algorithms:\*\*** Without the truthfulness constraint, monotone submodular welfare maximization can be approximated to within a factor of $1 - 1/e \approx 0.632$ using the continuous greedy algorithm with value queries (Vondrák, STOC 2008). This is tight in the value oracle model.
+- **Non-Truthful Algorithms:** Without the truthfulness constraint, monotone submodular welfare maximization can be approximated to within a factor of $1 - 1/e \approx 0.632$ using the continuous greedy algorithm with value queries (Vondrák, STOC 2008). This is tight in the value oracle model.
 
-- **\*\*Known Truthful Mechanisms:\*\*** The quest for truthful mechanisms with good approximation ratios has a long history:
+- **Known Truthful Mechanisms:** The quest for truthful mechanisms with good approximation ratios has a long history:
  - $O(\sqrt{m})$-approximation (Dobzinski, Nisan, and Schapira, 2005\)
  - $O(\log^2 m)$-approximation (Dobzinski, Nisan, and Schapira, 2006\)
  - $O(\log m \cdot \log \log m)$-approximation (Dobzinski, 2007\)
@@ -35,11 +35,11 @@ The **\*\*approximation ratio\*\*** of a truthful mechanism is the worst-case ra
  - $O(\sqrt{\log m})$-approximation (Dobzinski, 2016\)
  - $O((\log \log m)^3)$-approximation (Assadi, Kesselheim, and Singla, 2021))
 
-For the special case of **\*\*submodular\*\*** bidders, an improved analysis yields an $O((\log \log m)^2)$-approximation. This is the current state of the art.
+For the special case of **submodular** bidders, an improved analysis yields an $O((\log \log m)^2)$-approximation. This is the current state of the art.
 
-**\#\#\# Research Goal**
+### Research Goal
 
-Design a **\*\*(universally) truthful\*\*** mechanism for combinatorial auctions with **\*\*monotone submodular valuations\*\*** that achieves an $O(\log \log m)$-approximation to the optimal social welfare, using a polynomial number of demand oracle queries. That is, construct a mechanism such that for any instance:
+Design a **(universally) truthful** mechanism for combinatorial auctions with **monotone submodular valuations** that achieves an $O(\log \log m)$-approximation to the optimal social welfare, using a polynomial number of demand oracle queries. That is, construct a mechanism such that for any instance:
 
 $$
 \mathbb{E}\left[\sum_{i=1}^n v_i(S_i)\right] \geq \Omega\left(\frac{1}{\log \log m}\right) \cdot \text{OPT},
@@ -52,7 +52,7 @@ This would improve upon the current best $O((\log \log m)^2)$-approximation of A
 - Designing a new mechanism with a refined hierarchical decomposition or bundling strategy that avoids the extra logarithmic loss.
 - Combining ideas from the non-truthful $O(\log \log m)$-approximation algorithms (which exist for the broader subadditive class via prophet inequality techniques) with truthfulness-preserving reductions.
 
-**\#\#\# Key References**
+### Key References
 
 Download the following paper and read it carefully before proceeding.
 

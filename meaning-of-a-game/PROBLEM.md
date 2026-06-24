@@ -3,11 +3,11 @@ name: Meaning of a Game
 contributor: Christos Papadimitriou
 ---
 
-**\#\# Computing the Meaning of a Game**
+## Computing the Meaning of a Game
 
-**\#\#\# Problem Description**
+### Problem Description
 
-The **\*\*Nash equilibrium\*\*** has been the dominant solution concept in game theory
+The **Nash equilibrium** has been the dominant solution concept in game theory
 since Nash's 1950 existence proof. However, serious computational deficiencies
 have eroded confidence in it as "the meaning of the game": computing a Nash
 equilibrium is PPAD-complete even for two-player games, the multiplicity of
@@ -22,9 +22,9 @@ An alternative paradigm, proposed by Papadimitriou and Piliouras (2019) and
 developed in a series of subsequent works by Biggar, Piliouras, and
 Papadimitriou, redefines the meaning of a game in dynamical terms:
 
-\> **\*\*The meaning of a game\*\*** $G$ is a function $\mu_G$ that maps any prior
+\> **The meaning of a game** $G$ is a function $\mu_G$ that maps any prior
 \> distribution over the mixed strategy profiles of $G$ to the posterior (limit)
-\> distribution over the **\*\*attractors\*\*** of the **\*\*replicator dynamic\*\*** in $G$.
+\> distribution over the **attractors** of the **replicator dynamic** in $G$.
 
 That is, the meaning of a game is the way in which repeated play transforms the
 collective behavior of the players. The replicator dynamic — gradient descent
@@ -34,16 +34,16 @@ is robust to many other natural learning dynamics.
 
 This reformulation leads to two concrete computational problems:
 
-\> **\*\*(1) Attractor Computation\*\***: Given a game $G$ in normal form, compute a
+\> **(1) Attractor Computation**: Given a game $G$ in normal form, compute a
 \> description of the attractors of the replicator dynamics in $G$.
 
-\> **\*\*(2) Limit Prediction\*\***: Given a game $G$ and a mixed strategy profile $x$,
+\> **(2) Limit Prediction**: Given a game $G$ and a mixed strategy profile $x$,
 \> compute the attractor to which the replicator dynamic converges starting at
 \> $x$.
 
-**\#\#\# Known Results**
+### Known Results
 
-**\*\*The unlearnability of Nash equilibria:\*\***
+**The unlearnability of Nash equilibria:**
 
 -   Shapley (1964) showed that fictitious play can cycle and fail to converge to
    Nash equilibria in simple $3 \times 3$ games.
@@ -57,13 +57,13 @@ This reformulation leads to two concrete computational problems:
    } = \mathsf{PPAD}$ or $\mathsf{NP} = \mathsf{RP}$, respectively).
 -   They further proved that any uniformly Nash-convergent dynamic equipped with
    a locally tractable Lyapunov function cannot be locally tractable unless
-   $\mathsf{PPAD} = \mathsf{CLS}$, and formulated the \*\*Impossibility
-   Conjecture\*\*: if a locally tractable Nash-convergent dynamic exists for all
+   $\mathsf{PPAD} = \mathsf{CLS}$, and formulated the **Impossibility
+   Conjecture**: if a locally tractable Nash-convergent dynamic exists for all
    games, then $\mathsf{P} = \mathsf{PPAD}$.
 
-**\*\*Towards computing attractors:\*\***
+**Towards computing attractors:**
 
--   The **\*\*Fundamental Theorem of Dynamical Systems\*\*** (Conley, 1978\) guarantees
+-   The **Fundamental Theorem of Dynamical Systems** (Conley, 1978\) guarantees
    that every dynamical system on a compact space converges to its chain
    recurrent components, guided by a Lyapunov function. In games, these
    components — the attractors of the replicator dynamic — are the natural
@@ -79,19 +79,19 @@ This reformulation leads to two concrete computational problems:
    problem: given a game and a starting profile, computing (approximately)
    which attractor the replicator dynamic converges to.
 
-**\#\#\# Research Goal**
+### Research Goal
 
 Determine whether the meaning of a game can be computed efficiently:
 
-**\*\*(1)\*\*** Prove or disprove that there is a polynomial-time algorithm which, given
+**(1)** Prove or disprove that there is a polynomial-time algorithm which, given
 any game $G$ in normal form, outputs a description of the attractors of the
 replicator dynamics in $G$.
 
-**\*\*(2)\*\*** Prove or disprove that there is a polynomial-time algorithm which, given
+**(2)** Prove or disprove that there is a polynomial-time algorithm which, given
 a game $G$ and a mixed strategy profile $x$, computes the limit attractor of
 the replicator dynamic starting at $x$.
 
-**\#\#\# Key References**
+### Key References
 
 *   Biggar, Oliver, and Christos Papadimitriou. "Computing stable limit cycles
    of learning in games." arXiv preprint arXiv:2602.11315 (2026).

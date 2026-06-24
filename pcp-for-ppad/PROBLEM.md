@@ -3,19 +3,19 @@ name: PCP for PPAD
 contributor: Aviad Rubinstein
 ---
 
-**\#\# A PCP Theorem for PPAD**
+## A PCP Theorem for PPAD
 
-**\#\#\# Problem Description**
+### Problem Description
 
-The **\*\*PCP (Probabilistically Checkable Proofs) Theorem\*\*** is one of the  
+The **PCP (Probabilistically Checkable Proofs) Theorem** is one of the  
 cornerstones of computational complexity. It characterizes NP in terms of proof  
 systems where a verifier reads only a constant number of random bits and proof  
 bits, yet accepts valid proofs with certainty and rejects invalid proofs with  
 high probability. The theorem's deepest consequence is a sweeping theory of  
-**\*\*hardness of approximation\*\***: it implies that for many NP-hard optimization  
+**hardness of approximation**: it implies that for many NP-hard optimization  
 problems, even finding an approximately optimal solution is NP-hard.
 
-**\*\*PPAD\*\*** (Polynomial Parity Arguments on Directed graphs) is the complexity  
+**PPAD** (Polynomial Parity Arguments on Directed graphs) is the complexity  
 class capturing the difficulty of total search problems whose existence is  
 guaranteed by a parity argument on directed graphs — most famously, computing a  
 Nash equilibrium. The foundational results of Daskalakis, Goldberg, and  
@@ -25,18 +25,18 @@ exact Nash equilibrium in a two-player game is PPAD-complete.
 A natural and far-reaching question is whether PPAD has its own analogue of the  
 PCP theorem:
 
-\> **\*\*Does there exist a "PCP theorem for PPAD"\*\*** — i.e., a robust  
+\> **Does there exist a "PCP theorem for PPAD"** — i.e., a robust  
 \> characterization of PPAD showing that approximate versions of PPAD-complete  
 \> problems remain PPAD-hard?
 
-More concretely, the **\*\*PCP-for-PPAD conjecture\*\*** (introduced by Babichenko,  
+More concretely, the **PCP-for-PPAD conjecture** (introduced by Babichenko,  
 Papadimitriou, and Rubinstein, 2016\) asserts that the $(\varepsilon,  
-\delta)$-**\*\*Generalized Circuit\*\*** problem — a relaxation of the standard  
+\delta)$-**Generalized Circuit** problem — a relaxation of the standard  
 PPAD-complete Generalized Circuit problem in which both the "almost-fixedness"  
 and "closeness" parameters are allowed to be positive constants — remains  
 PPAD-hard.
 
-**\*\*The $(\varepsilon, \delta)$-Generalized Circuit Problem\*\***: Given a  
+**The $(\varepsilon, \delta)$-Generalized Circuit Problem**: Given a  
 (succinctly described) arithmetic circuit $C$ over $[0,1]^n$ with Lipschitz  
 constant at most $1$, find a point $x \in [0,1]^n$ such that each gate $g$ of  
 the circuit satisfies its defining constraint to within an additive  
@@ -45,9 +45,9 @@ $\varepsilon = \delta = 0$ this is the standard PPAD-complete problem. The
 conjecture is that the problem remains PPAD-hard for some constants $\varepsilon,  
 \delta > 0$.
 
-**\#\#\# Known Results**
+### Known Results
 
-**\*\*Hardness results for Generalized Circuit (equivalently, Nash equilibrium):\*\***
+**Hardness results for Generalized Circuit (equivalently, Nash equilibrium):**
 
 The following results establish PPAD-hardness of the $(\varepsilon,  
 \delta)$\-Generalized Circuit problem for progressively larger $\varepsilon$.  
@@ -62,7 +62,7 @@ in constant-degree, constant-action polymatrix games.
 \-   Rubinstein (STOC 2015 / SICOMP 2018\) proved PPAD-hardness for  
    $\varepsilon = \Theta(1)$.
 
-**\*\*Partial progress toward a full PCP:\*\***
+**Partial progress toward a full PCP:**
 
 \-   Rubinstein (FOCS 2016\) proved a BFLS-type PCP for PPAD with query  
    complexity approximately $\sqrt{n}$ — sublinear in $n$, but still much  
@@ -73,7 +73,7 @@ in constant-degree, constant-action polymatrix games.
    this problem provably cannot be PPAD-hard, so the result is a conditional  
    time lower bound rather than a PPAD-hardness reduction.)
 
-**\*\*Motivations and consequences:\*\***  
+**Motivations and consequences:**  
 \-   One of the original motivations for introducing the conjecture (Babichenko,  
    Papadimitriou, and Rubinstein, 2016\) was that it would imply  
    quasipolynomial-hardness, assuming ETH-for-PPAD,  
@@ -89,21 +89,21 @@ in constant-degree, constant-action polymatrix games.
    its power and scope (see, e.g., Deligkas, Fearnley, Hollender, and  
    Melissourgos, 2026; Braverman, Liu, Xue, and Zhou, 2026).
 
-**\#\#\# Research Goal**
+### Research Goal
 
 Prove (or disprove) the PCP-for-PPAD conjecture: that the $(\varepsilon,  
 \delta)$-Generalized Circuit problem is PPAD-hard for some constants  
 $\varepsilon, \delta > 0$.
 
-**\#\#\# Challenges**
+### Challenges
 
-The central difficulty is that PPAD is a class of **\*\*total search problems\*\*** —  
+The central difficulty is that PPAD is a class of **total search problems** —  
 a solution is guaranteed to exist — whereas the classical PCP theorem applies to  
-**\*\*decision problems\*\*** in NP. In the NP setting, the PCP theorem converts a  
+**decision problems** in NP. In the NP setting, the PCP theorem converts a  
 correct proof into one that is locally testable; an invalid proof is rejected  
-with high probability. In the PPAD setting, one must maintain the **\*\*totality\*\***  
+with high probability. In the PPAD setting, one must maintain the **totality**  
 guarantee (the directed-graph parity argument must still ensure the existence of  
-a solution) while simultaneously introducing enough **\*\*robustness\*\*** that  
+a solution) while simultaneously introducing enough **robustness** that  
 approximate solutions cannot be found easily. Reconciling totality with local  
 testability is the core technical barrier.
 
@@ -112,7 +112,7 @@ for PPAD is achievable with $\approx \sqrt{n}$ query complexity, but bridging
 the gap to $O(1)$ queries — as the classical PCP theorem achieves for NP —  
 remains wide open and appears to require fundamentally new ideas.
 
-**\#\#\# Key References**
+### Key References
 
 \*   Babichenko, Yakov, Christos Papadimitriou, and Aviad Rubinstein. "Can almost  
    everybody be almost happy? PCP for PPAD and the inapproximability of Nash."  

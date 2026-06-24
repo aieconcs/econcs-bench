@@ -3,15 +3,15 @@ name: Revenue Optimal DSIC Auction
 contributor: Jeff Jiang, David Parkes and Tonghan Wang
 ---
 
-**\#\# Provably Revenue Optimal DSIC Sealed-Bid Auctions**
+## Provably Revenue Optimal DSIC Sealed-Bid Auctions
 
-**\#\#\# Problem Description**
+### Problem Description
 
-We consider **\*\*sealed-bid auctions\*\*** with a set of $n$ bidders,
+We consider **sealed-bid auctions** with a set of $n$ bidders,
 $N=\{1,\ldots,n\}$, and $m$ items, $M=\{1,\ldots,m\}$, with $m>1$ and $n>1$.
 Bidder $i$ has a valuation function $v_i:2^M\rightarrow \mathbb{R}_{\ge 0}$.
-Valuations are continuous. We consider both **\*\*additive valuations\*\***, where
-$v_i(S)=\sum_{j\in S}v_i(j)$, and **\*\*unit-demand valuations\*\***, where
+Valuations are continuous. We consider both **additive valuations**, where
+$v_i(S)=\sum_{j\in S}v_i(j)$, and **unit-demand valuations**, where
 $v_i(S)=\max_{j\in S}v_i(j)$.
 
 Valuation $v_i$ is drawn independently from a known distribution $F_i$ over
@@ -25,7 +25,7 @@ $i$ at bid profile $\bm b=(b_1,\ldots,b_n)$. Bidder $i$'s utility is
 $u_i(v_i;\bm b)=v_i(g_i(\bm b))-p_i(\bm b)$. In full generality, the allocation
 rule may be randomized.
 
-The auction is **\*\*dominant-strategy incentive compatible (DSIC)\*\***, or
+The auction is **dominant-strategy incentive compatible (DSIC)**, or
 *\*strategy-proof (SP)\**, if $u_i(v_i;(v_i,\bm b_{-i}))\geq u_i(v_i;(b_i,\bm
 b_{-i}))$ for all $i\in N$, $v_i,b_i\in V_i$, and $\bm b_{-i}\in V_{-i}$. It is
 *\*individually rational (IR)\** if $u_i(v_i;(v_i,\bm b_{-i}))\geq 0$ for all $i\in
@@ -37,18 +37,18 @@ maximizing expected revenue:
 $\mathcal{R}(\bm F)=\sup_{(g,p)\in \mathrm{DSIC}\cap \mathrm{IR}}\mathbb{E}_{\bm
 v\sim \bm F}\left[\sum_{i=1}^n p_i(\bm v)\right]$.
 
-**\#\#\# Research Goal**
+### Research Goal
 
-(1) **\*\*Computational Goal\*\***: For some continuous distribution $\bm F$, some $n>1$
+(1) **Computational Goal**: For some continuous distribution $\bm F$, some $n>1$
    and $m>1$, learn an auction $(g^\star,p^\star)$ expressed by neural networks
    or other representations such that $\mathbb{E}_{\bm v\sim \bm F}\left[\sum_i
    p_i^\star(\bm v)\right]=\mathcal{R}(\bm F)$, together with a rigorous proof
    of DSIC, IR, and revenue optimality.
-(2) **\*\*Characterization Goal\*\***: For some continuous distribution $\bm F$, some
+(2) **Characterization Goal**: For some continuous distribution $\bm F$, some
    $n>1$ and $m>1$, give an explicit characterization of a revenue-optimal DSIC
    and IR auction $(g^\star,p^\star)$.
 
-**\#\#\# Challenges**
+### Challenges
 
 Myerson’s seminal work (1981) characterizes optimal auctions for the sale of a
 single item. Within the class of DSIC, multi-item auctions, the only analytical
@@ -59,7 +59,7 @@ whose value distributions each have support of size two (Yao, 2017). Obtaining
 provably revenue-optimal DSIC auctions in multi-bidder, multi-item settings,
 with continuous value distributions, remains a long-standing open challenge.
 
-**\#\#\# Relation to Known Results**
+### Relation to Known Results
 
 Neural mechanism design methods, termed "differentiable economics," such as
 RochetNet (Dütting et al., 2024), GemNet (Wang, Jiang, and Parkes, 2024),
@@ -72,7 +72,7 @@ challenge, for the $m>1, n>1$ case, is to turn such AI-discovered mechanisms
 into provably optimal results, through either a computational or
 characterization-based path.
 
-**\#\#\# Key References**
+### Key References
 
 *   Cai, Yang, Constantinos Daskalakis, and S. Matthew Weinberg. "An algorithmic
    characterization of multi-dimensional mechanisms." Proceedings of the
