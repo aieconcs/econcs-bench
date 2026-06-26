@@ -3,9 +3,9 @@ name: Revelation Gap for Public-Budget Welfare Maximization
 contributor: Jason Hartline
 ---
 
-## Revelation Gap: Public-Budget Welfare Maximization
+## Revelation Gap for Public-Budget Welfare Maximization
 
-### Background: The Revelation Gap
+### Background
 
 In prior-independent mechanism design, a single mechanism must be fixed before
 the distribution of agents' values is known.  The revelation gap measures the
@@ -44,7 +44,7 @@ can be fixed before the prior is known while agents' equilibrium strategies
 adapt to the prior.  The direct mechanism that simulates those strategies
 usually depends on the prior and is therefore not prior-independent.
 
-### Problem Description: Closing the 1.013-to-$e$ Gap
+### Problem Description - Closing the 1.013-to-$e$ Gap
 
 In **single-item welfare maximization with public-budget agents**, there are
 $n$ agents competing for one item.  Agent $i$'s value is drawn i.i.d. from

@@ -3,9 +3,9 @@ name: Revelation Gap for MHR Pricing from One Sample
 contributor: Jason Hartline
 ---
 
-## Revelation Gap: Pricing from One Sample for MHR Revenue
+## Revelation Gap for MHR Pricing from One Sample
 
-### Background: The Revelation Gap
+### Background
 
 In prior-independent mechanism design, a single mechanism must be fixed before
 the distribution of agents' values is known.  The revelation gap measures the
