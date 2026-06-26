@@ -1,5 +1,5 @@
 ---
-name: Revelation Gap: Pricing from One Sample for MHR Revenue
+name: Revelation Gap for MHR Pricing from One Sample
 contributor: Jason Hartline
 ---
 

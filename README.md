@@ -22,8 +22,8 @@ Benchmark suite of open research challenges in Economics and Computation (EconCS
 | PCP for PPAD | Aviad Rubinstein | [pcp-for-ppad](pcp-for-ppad/PROBLEM.md) |
 | Prophet Inequality for Subadditive CA | Paul Duetting | [prophet-inequality-for-subadditive-ca](prophet-inequality-for-subadditive-ca/PROBLEM.md) |
 | Query Complexity of Tarski Fixed Points | Aviad Rubinstein | [query-complexity-of-tarski](query-complexity-of-tarski/PROBLEM.md) |
-| Revelation Gap: Pricing from One Sample for MHR Revenue | Jason Hartline | [revelation-gap-mhr-pricing](revelation-gap-mhr-pricing/PROBLEM.md) |
-| Revelation Gap: Public-Budget Welfare Maximization | Jason Hartline | [revelation-gap-public-budget-welfare](revelation-gap-public-budget-welfare/PROBLEM.md) |
+| Revelation Gap for MHR Pricing from One Sample | Jason Hartline | [revelation-gap-mhr-pricing](revelation-gap-mhr-pricing/PROBLEM.md) |
+| Revelation Gap for Public-Budget Welfare Maximization | Jason Hartline | [revelation-gap-public-budget-welfare](revelation-gap-public-budget-welfare/PROBLEM.md) |
 | Revenue Optimal DSIC Auction | Jeff Jiang, David Parkes, Tonghan Wang | [revenue-optimal-dsic-auction](revenue-optimal-dsic-auction/PROBLEM.md) |
 | Signal-Preserving 2/3-Approximation for Explainable Linear Information Design | Yiling Chen and Tao Lin | [signal-preserving-explainable-information-design](signal-preserving-explainable-information-design/PROBLEM.md) |
 | Static Posted Pricing for Multi-Unit Combinatorial Auctions | Brendan Lucier | [posted-pricing-multi-unit-xos](posted-pricing-multi-unit-xos/PROBLEM.md) |

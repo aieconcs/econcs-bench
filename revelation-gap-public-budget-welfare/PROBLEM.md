@@ -1,5 +1,5 @@
 ---
-name: Revelation Gap: Public-Budget Welfare Maximization
+name: Revelation Gap for Public-Budget Welfare Maximization
 contributor: Jason Hartline
 ---
 
