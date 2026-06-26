@@ -10,8 +10,7 @@ contributor: Shahar Dobzinski
 #### Basic Setting
 
 In a **combinatorial auction** $m$ indivisible items are being auctioned among
-$n$ bidders.  Each bidder $i$ has a **valuation function** $v_i : 2^M
-\rightarrow R$. Each valuation function is monotone (for each item $j$ and bundle
+$n$ bidders.  Each bidder $i$ has a **valuation function** $v_i : 2^M \rightarrow \mathbb{R}$. Each valuation function is monotone (for each item $j$ and bundle
 $S$, $v_i(S+\{j\})\geq v_i(S)$) and normalized ($v_i(\emptyset)=0$). The goal is to find
 an allocation $(S_1, S_2, \ldots, S_n)$ (if $i\neq j$ then $S_i\cap S_j=\emptyset$) that
 maximizes **social welfare**, $\sum_i v_i(S_i)$.
@@ -43,15 +42,15 @@ v_i(S’_i)-p’_i$.
 
 Ignoring incentive issues, Feige (2006) provides a 2-approximation algorithm for
 this problem (that is, always finds a solution with social welfare at least half
-of the optimal social welfare). For every constant epsilon\>0, an approximation
-ratio of 2-epsilon requires exponential communication (Dobzinski, Nisan,
+of the optimal social welfare). For every constant $\epsilon > 0$, an approximation
+ratio of $2 - \epsilon$ requires exponential communication (Dobzinski, Nisan,
 Schapira, 2005)..
 
 #### Possibility Results
 
 *   Dobzinski, Nisan, and Schapira (2005) provide a deterministic DSIC mechanism
-   that provides an approximation ratio of O(sqrt(m)).
-*   Qiu and Weinberg (2024) improve this ratio to O(sqrt(m/log m)).
+   that provides an approximation ratio of $O(\sqrt{m})$.
+*   Qiu and Weinberg (2024) improve this ratio to $O(\sqrt{m/\log m})$.
 
 #### Impossibility Results
 
@@ -75,8 +74,7 @@ Schapira, 2005)..
 ### Research Goal
 
 Prove or disprove: there is a deterministic DSIC mechanism for combinatorial
-auctions that uses poly(m,n) communication and achieves an approximation ratio
-of 2\.
+auctions that uses $\mathrm{poly}(m,n)$ communication and achieves an approximation ratio of $2$.
 
 ### Key References
 

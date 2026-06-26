@@ -31,51 +31,51 @@ fixed point, as a function of $N$ and $d$?**
 
 **Upper bounds:**
 
-\-   The naive algorithm based on iterating $f$ starting from the bottom of the  
-   lattice requires $O(N^d)$ queries.  
-\-   A recursive binary-search algorithm (Dang, Qi, and Ye, 2011\) finds a fixed  
-   point in $O(\log^d N)$ queries.  
-\-   Chen and Li (2022) improved this to $O(\log^{\lceil (d+1)/2 \rceil} N)$.  
-\-   Chen, Li, and Yannakakis (2026) further improved this to $O(\log^{\lceil  
-   (d-1)/3 \rceil + 1} N)$ for constant $d$, using a new framework based on  
+- The naive algorithm based on iterating $f$ starting from the bottom of the
+   lattice requires $O(N^d)$ queries.
+- A recursive binary-search algorithm (Dang, Qi, and Ye, 2011) finds a fixed
+   point in $O(\log^d N)$ queries.
+- Chen and Li (2022) improved this to $O(\log^{\lceil (d+1)/2 \rceil} N)$.
+- Chen, Li, and Yannakakis (2026) further improved this to $O(\log^{\lceil
+   (d-1)/3 \rceil + 1} N)$ for constant $d$, using a new framework based on
    safe partial-information functions.
 
 **Lower bounds:**
 
-\-   Etessami, Papadimitriou, Rubinstein, and Yannakakis (2020) proved that any  
-   (even randomized) algorithm requires $\Omega(\log^2 N)$ queries for $d = 2$.  
-   This lower bound immediately extends to all $d \geq 2$.  
-\-   Brânzei, Phillips, and Recker (2025) proved an $\tilde{\Omega}(d \cdot  
+- Etessami, Papadimitriou, Rubinstein, and Yannakakis (2020) proved that any
+   (even randomized) algorithm requires $\Omega(\log^2 N)$ queries for $d = 2$.
+   This lower bound immediately extends to all $d \geq 2$.
+- Brânzei, Phillips, and Recker (2025) proved an $\tilde{\Omega}(d \cdot
    \log^2 N)$ lower bound for general $d$ using a "herringbone" construction.
 
 **Tight results for small dimensions:**
 
-\-   The query complexity is $\Theta(\log^2 N)$ for $d = 2$ (Etessami et al.,  
-   2020), $d = 3$ (following immediately from the $d=2$ lower bound of Etessami  
-   et al. combined with the upper bound of Chen, Li, and Yannakakis, 2026), and  
+- The query complexity is $\Theta(\log^2 N)$ for $d = 2$ (Etessami et al.,
+   2020), $d = 3$ (following immediately from the $d=2$ lower bound of Etessami
+   et al. combined with the upper bound of Chen, Li, and Yannakakis, 2026), and
    $d = 4$ (Chen, Li, and Yannakakis, 2026).
 
 **Greatest/least fixed point:**
 
-\-   Finding the greatest or least fixed point requires $\Theta(d \cdot N)$  
-   queries in the black-box model and is NP-hard in the white-box (circuit)  
+- Finding the greatest or least fixed point requires $\Theta(d \cdot N)$
+   queries in the black-box model and is NP-hard in the white-box (circuit)
    model (Etessami et al., 2020).
 
 **Complexity-class placement (white-box model):**
 
-\-   In the white-box model (where $f$ is given as a Boolean circuit), the  
-   general Tarski problem is in PLS $\cap$ PPAD (Etessami et al., 2020).  
-\-   The Unique Tarski problem (where $f$ is promised to have a unique fixed  
-   point) has the same query complexity as the general problem (black-box  
+- In the white-box model (where $f$ is given as a Boolean circuit), the
+   general Tarski problem is in PLS $\cap$ PPAD (Etessami et al., 2020).
+- The Unique Tarski problem (where $f$ is promised to have a unique fixed
+   point) has the same query complexity as the general problem (black-box
    reduction).
 
 **Connections to games:**
 
-\-   Computing equilibria of **supermodular games** is computationally equivalent  
-   to the Tarski problem (Etessami et al., 2020). For two-player supermodular  
-   games where one player's strategy space is one-dimensional, an equilibrium  
-   can be found in $O(\log N)$ queries.  
-\-   Computing (approximating) the value of **Condon's stochastic games** and  
+- Computing equilibria of **supermodular games** is computationally equivalent
+   to the Tarski problem (Etessami et al., 2020). For two-player supermodular
+   games where one player's strategy space is one-dimensional, an equilibrium
+   can be found in $O(\log N)$ queries.
+- Computing (approximating) the value of **Condon's stochastic games** and
    **Shapley's stochastic games** reduces to the Tarski problem.
 
 ### Research Goal
@@ -129,20 +129,20 @@ $\tilde{\Omega}(d \cdot \log^2 N)$ while the upper bound is $O(\log^{\lceil
 
 ### Key References
 
-\*   Brânzei, Simina, Reed Phillips, and Nicholas Recker. "Query complexity of  
-   the Tarski fixed point problem in high dimensions." arXiv preprint (2025).  
-\*   Chen, Xi, and Yuhao Li. "Improved upper bounds for finding Tarski fixed  
-   points." Proceedings of the ACM Conference on Economics and Computation  
-   (EC). 2022\.  
-\*   Chen, Xi, Yuhao Li, and Mihalis Yannakakis. "The mystery deepens: On the  
-   query complexity of Tarski fixed points." arXiv preprint arXiv:2604.00268  
-   (2026).  
-\*   Dang, Chuangyin, Qi Qi, and Yinyu Ye. "Computations and complexities of  
-   Tarski's fixed points and supermodular games." arXiv preprint (2011).  
-\*   Etessami, Kousha, Christos Papadimitriou, Aviad Rubinstein, and Mihalis  
-   Yannakakis. "Tarski's theorem, supermodular games, and the complexity of  
-   equilibria." Proceedings of the Innovations in Theoretical Computer  
-   Science Conference (ITCS). 2020\.  
-\*   Fearnley, John, Paul W. Goldberg, Alexandros Hollender, and Rahul Savani.  
-   "The complexity of gradient descent: CLS = PPAD $\cap$ PLS." Journal of the  
+*   Brânzei, Simina, Reed Phillips, and Nicholas Recker. "Query complexity of
+   the Tarski fixed point problem in high dimensions." arXiv preprint (2025).
+*   Chen, Xi, and Yuhao Li. "Improved upper bounds for finding Tarski fixed
+   points." Proceedings of the ACM Conference on Economics and Computation
+   (EC). 2022.
+*   Chen, Xi, Yuhao Li, and Mihalis Yannakakis. "The mystery deepens: On the
+   query complexity of Tarski fixed points." arXiv preprint arXiv:2604.00268
+   (2026).
+*   Dang, Chuangyin, Qi Qi, and Yinyu Ye. "Computations and complexities of
+   Tarski's fixed points and supermodular games." arXiv preprint (2011).
+*   Etessami, Kousha, Christos Papadimitriou, Aviad Rubinstein, and Mihalis
+   Yannakakis. "Tarski's theorem, supermodular games, and the complexity of
+   equilibria." Proceedings of the Innovations in Theoretical Computer
+   Science Conference (ITCS). 2020.
+*   Fearnley, John, Paul W. Goldberg, Alexandros Hollender, and Rahul Savani.
+   "The complexity of gradient descent: CLS = PPAD $\cap$ PLS." Journal of the
    ACM (2023).

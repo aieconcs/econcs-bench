@@ -3,9 +3,9 @@ name: Revelation Gap: Pricing from One Sample for MHR Revenue
 contributor: Jason Hartline
 ---
 
-# Revelation Gap: Pricing from One Sample for MHR Revenue
+## Revelation Gap: Pricing from One Sample for MHR Revenue
 
-## Background: The Revelation Gap
+### Background: The Revelation Gap
 
 In prior-independent mechanism design, a single mechanism must be fixed before
 the distribution of agents' values is known.  The revelation gap measures the
@@ -44,7 +44,7 @@ can be fixed before the prior is known while agents' equilibrium strategies
 adapt to the prior.  The direct mechanism that simulates those strategies
 usually depends on the prior and is therefore not prior-independent.
 
-## Problem Description
+### Problem Description
 
 In **single-buyer pricing from one sample**, a seller has one item and faces
 one buyer.  The buyer's value $v\sim F$ is drawn from an unknown distribution
@@ -74,7 +74,7 @@ mechanism classes in the baseline comparison are:
   $a>0$, the mechanism solicits a bid $b$, allocates if $b\ge s$, and
   charges $a\min\{b,s\}$ regardless of allocation.
 
-## Known Results
+### Known Results
 
 - **Truthful MHR sample pricing is nearly characterized.**  The optimal
   truthful prior-independent approximation factor for MHR distributions lies
@@ -125,7 +125,7 @@ $$
   as a distinct comparison from the value-only truthful/sample-pricing baseline
   because the permitted message space is different.
 
-## Research Goal
+### Research Goal
 
 Identify the tight MHR revelation gap for one-sample revenue maximization.
 In the Feng--Hartline--Li one-bid/sample-bid formulation, this means closing
@@ -155,7 +155,7 @@ Concrete open questions:
   be treated as legitimate non-revelation mechanisms, or as a different
   implementation-theory model?
 
-## Key References
+### Key References
 
 - Feng, Hartline, and Li, "Revelation Gap for Pricing from Samples" (STOC
   2021): https://arxiv.org/abs/2102.13496

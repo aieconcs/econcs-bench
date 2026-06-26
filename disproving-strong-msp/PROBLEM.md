@@ -7,11 +7,11 @@ contributor: Anonymous Contribution
 
 ### Problem Description
 
-A **matroid** $\mathcal{M} = (E, \mathcal{I})$ consists of a finite ground set $E$ with $|E| = n$ and a collection $\mathcal{I} \subseteq 2^E$ of *\*independent sets\** satisfying:
+A **matroid** $\mathcal{M} = (E, \mathcal{I})$ consists of a finite ground set $E$ with $|E| = n$ and a collection $\mathcal{I} \subseteq 2^E$ of **independent sets** satisfying:
 - **Hereditary**: $\emptyset \in \mathcal{I}$, and if $A \subseteq B \in \mathcal{I}$ then $A \in \mathcal{I}$.
 - **Exchange**: If $A, B \in \mathcal{I}$ with $|A| < |B|$, there exists $e \in B \setminus A$ with $A \cup \{e\} \in \mathcal{I}$.
 
-The *\*rank\** $r = r(\mathcal{M})$ is the size of any maximal independent set (called a *\*base\**). The **uniform matroid** $U_{n,k}$ has ground set of size $n$ and independent sets $\mathcal{I} = \{S \subseteq E : |S| \leq k\}$.
+The **rank** $r = r(\mathcal{M})$ is the size of any maximal independent set (called a **base**). The **uniform matroid** $U_{n,k}$ has ground set of size $n$ and independent sets $\mathcal{I} = \{S \subseteq E : |S| \leq k\}$.
 
 In the **Matroid Secretary Problem (MSP)**, each element $e \in E$ has a non-negative weight $w(e) \geq 0$. The elements arrive in a **uniformly random order** — a permutation $\sigma$ drawn uniformly from $S_n$. Upon arrival of element $e$, the algorithm observes $w(e)$ and must immediately and irrevocably decide to **accept** or **reject** $e$. The constraint is that the set of accepted elements must remain independent in $\mathcal{M}$ at all times. The objective is to maximize the total weight of accepted elements.
 
@@ -112,11 +112,11 @@ $$
 
 This means showing that for every ordinal algorithm $\mathcal{A}$, there exists a weight vector $w$ (consistent with the orderings the algorithm might observe) such that $\mathbb{E}[\mathcal{A}]/\mathrm{OPT} < 1/e - \varepsilon$.
 
-\> \[\!NOTE\]
-\> An ordinal impossibility result would not directly disprove the SMSC (which allows cardinal algorithms), but it would:
-\> 1\. Establish a **separation** between ordinal and cardinal algorithms for the MSP, which is unknown today.
-\> 2\. Show that the $1/e$ barrier of the classical secretary problem is **not robust** to matroid constraints under ordinal information.
-\> 3\. Provide key structural insights about which matroids are hard and why, potentially guiding attacks on the full (cardinal) SMSC.
+> [!NOTE]
+> An ordinal impossibility result would not directly disprove the SMSC (which allows cardinal algorithms), but it would:
+> 1. Establish a **separation** between ordinal and cardinal algorithms for the MSP, which is unknown today.
+> 2. Show that the $1/e$ barrier of the classical secretary problem is **not robust** to matroid constraints under ordinal information.
+> 3. Provide key structural insights about which matroids are hard and why, potentially guiding attacks on the full (cardinal) SMSC.
 
 ### Key References
 

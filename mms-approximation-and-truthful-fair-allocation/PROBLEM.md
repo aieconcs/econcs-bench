@@ -3,9 +3,9 @@ name: MMS Approximation and Truthful Fair Allocation
 contributor: Moshe Babaioff
 ---
 
-# MMS Approximation and Truthful Fair Allocation
+## MMS Approximation and Truthful Fair Allocation
 
-## Problem Description
+### Problem Description
 
 Consider a fair-division instance with a set $N$ of $n$ agents and a set $M$ of indivisible goods. Each agent $i \in N$ has an additive valuation function $v_i : 2^M \rightarrow \mathbb{R}_{\geq 0}$.
 
@@ -30,7 +30,7 @@ A deterministic mechanism is **(dominant-strategy) truthful** if no agent can be
 
 A randomized mechanism is **truthful in expectation (TIE)** if no agent can increase her expected utility by misreporting, regardless of the reports of the other agents.
 
-## Known Results
+### Known Results
 
 ### MMS Approximation (without incentives)
 
@@ -44,7 +44,7 @@ Babaioff, Feige, Manaker, and Morag (2026) study the limits of fairness achievab
 
 - **Randomized TIE mechanisms.** They show that a truthful-in-expectation mechanism can achieve a $1/\log(n)$ ex-post MMS guarantee.
 
-## Research Goals
+### Research Goals
 
 **Open Problem 1 (MMS approximation).** Find the best $\alpha$ such that an $\alpha$-MMS allocation is guaranteed to exist for every instance with $n$ additive agents. Furthermore, determine the best $\alpha$ for which such an allocation can be computed in polynomial time.
 
@@ -56,6 +56,6 @@ Specifically:
 
 **Open Problem 2b.** What is the best MMS approximation that a randomized truthful-in-expectation mechanism can ensure? The best known result achieves a $1/\log(n)$ ex-post MMS guarantee (Babaioff, Feige, Manaker, and Morag, 2026). Can this be improved, and what is achievable by polynomial-time mechanisms?
 
-## Key References
+### Key References
 
 - Moshe Babaioff, Uriel Feige, Shai Manaker, and Morag (2026). Truthful fair allocation mechanisms.

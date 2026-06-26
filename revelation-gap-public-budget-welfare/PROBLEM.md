@@ -3,9 +3,9 @@ name: Revelation Gap: Public-Budget Welfare Maximization
 contributor: Jason Hartline
 ---
 
-# Revelation Gap: Public-Budget Welfare Maximization
+## Revelation Gap: Public-Budget Welfare Maximization
 
-## Background: The Revelation Gap
+### Background: The Revelation Gap
 
 In prior-independent mechanism design, a single mechanism must be fixed before
 the distribution of agents' values is known.  The revelation gap measures the
@@ -44,7 +44,7 @@ can be fixed before the prior is known while agents' equilibrium strategies
 adapt to the prior.  The direct mechanism that simulates those strategies
 usually depends on the prior and is therefore not prior-independent.
 
-## Problem Description: Closing the 1.013-to-$e$ Gap
+### Problem Description: Closing the 1.013-to-$e$ Gap
 
 In **single-item welfare maximization with public-budget agents**, there are
 $n$ agents competing for one item.  Agent $i$'s value is drawn i.i.d. from
@@ -78,7 +78,7 @@ The central comparison is:
   auctions whose Bayes-Nash equilibria depend on $F$.
 - **Revelation mechanisms**: prior-independent truthful or direct mechanisms.
 
-## Known Results
+### Known Results
 
 - **All-pay is prior-independent and optimal for regular public-budget
   agents.**  Feng and Hartline (2018) show that for i.i.d. public-budget
@@ -117,7 +117,7 @@ $$
   irregular distributions, the corresponding approximation bounds degrade by a
   factor of two in the known analysis.
 
-## Research Goal
+### Research Goal
 
 Determine the exact truthful prior-independent approximation factor for
 i.i.d. public-budget regular agents.  Since the all-mechanism optimum is
@@ -142,7 +142,7 @@ Concrete open questions:
 - What are the exact regular and irregular public-budget gaps in position
   environments?
 
-## Key Reference
+### Key Reference
 
 The primary reference is Feng and Hartline, "An End-to-end Argument in
 Mechanism Design (Prior-independent Auctions for Budgeted Agents)," FOCS 2018:

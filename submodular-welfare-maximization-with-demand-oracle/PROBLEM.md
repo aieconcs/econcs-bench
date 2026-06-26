@@ -27,9 +27,9 @@ The demand oracle is strictly more powerful than the value oracle: a demand orac
 
 ### Known Results
 
-- **Value Oracle Model**: Vondr\\'{a}k (STOC 2008\) proved that the optimal approximation ratio for the SWM problem in the value oracle model is exactly $1 - 1/e \approx 0.6321$. This is achieved by the continuous greedy algorithm combined with pipage rounding, and no algorithm using only value queries can do better.
+- **Value Oracle Model**: Vondrák (STOC 2008) proved that the optimal approximation ratio for the SWM problem in the value oracle model is exactly $1 - 1/e \approx 0.6321$. This is achieved by the continuous greedy algorithm combined with pipage rounding, and no algorithm using only value queries can do better.
 
-- **Demand Oracle Model**: Feige and Vondr\\'{a}k (Theory of Computing, 2010\) showed that the $1 - 1/e$ barrier can be broken in the demand oracle model. They designed an algorithm achieving an approximation ratio of $(1 - 1/e + \epsilon)$ for some small constant $\epsilon > 0$. Their approach combines the continuous greedy algorithm with a "correction" phase that uses demand queries to improve upon the $(1-1/e)$-approximate solution. The improvement $\epsilon$ obtained in their work is very small (roughly $\epsilon \approx 10^{-6}$ or smaller).
+- **Demand Oracle Model**: Feige and Vondrák (Theory of Computing, 2010) showed that the $1 - 1/e$ barrier can be broken in the demand oracle model. They designed an algorithm achieving an approximation ratio of $(1 - 1/e + \epsilon)$ for some small constant $\epsilon > 0$. Their approach combines the continuous greedy algorithm with a "correction" phase that uses demand queries to improve upon the $(1-1/e)$-approximate solution. The improvement $\epsilon$ obtained in their work is very small (roughly $\epsilon \approx 10^{-6}$ or smaller).
 
 ### Research Goal
 
@@ -45,7 +45,7 @@ The algorithm should run in polynomial time in $n$ and $m$, using a polynomial n
 
 ### Key Reference
 
-Download the paper at https://theory.stanford.edu/\~jvondrak/data/submod-improve.pdf and read it carefully before proceeding. This paper (Feige and Vondr\\'{a}k, "The Submodular Welfare Problem with Demand Queries", Theory of Computing, 2010\) establishes the current state of the art and describes the algorithmic framework you should build upon.
+Download the paper at https://theory.stanford.edu/~jvondrak/data/submod-improve.pdf and read it carefully before proceeding. This paper (Feige and Vondrák, "The Submodular Welfare Problem with Demand Queries", Theory of Computing, 2010) establishes the current state of the art and describes the algorithmic framework you should build upon.
 
 Also consult:
-- Vondr\\'{a}k, "Optimal Approximation for the Submodular Welfare Problem in the Value Oracle Model" (STOC 2008\) — for the $1 - 1/e$ upper bound in the value oracle model and the continuous greedy algorithm.
+- Vondrák, "Optimal Approximation for the Submodular Welfare Problem in the Value Oracle Model" (STOC 2008) — for the $1 - 1/e$ upper bound in the value oracle model and the continuous greedy algorithm.

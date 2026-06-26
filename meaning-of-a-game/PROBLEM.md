@@ -22,9 +22,9 @@ An alternative paradigm, proposed by Papadimitriou and Piliouras (2019) and
 developed in a series of subsequent works by Biggar, Piliouras, and
 Papadimitriou, redefines the meaning of a game in dynamical terms:
 
-\> **The meaning of a game** $G$ is a function $\mu_G$ that maps any prior
-\> distribution over the mixed strategy profiles of $G$ to the posterior (limit)
-\> distribution over the **attractors** of the **replicator dynamic** in $G$.
+> **The meaning of a game** $G$ is a function $\mu_G$ that maps any prior
+> distribution over the mixed strategy profiles of $G$ to the posterior (limit)
+> distribution over the **attractors** of the **replicator dynamic** in $G$.
 
 That is, the meaning of a game is the way in which repeated play transforms the
 collective behavior of the players. The replicator dynamic — gradient descent
@@ -34,12 +34,12 @@ is robust to many other natural learning dynamics.
 
 This reformulation leads to two concrete computational problems:
 
-\> **(1) Attractor Computation**: Given a game $G$ in normal form, compute a
-\> description of the attractors of the replicator dynamics in $G$.
+> **(1) Attractor Computation**: Given a game $G$ in normal form, compute a
+> description of the attractors of the replicator dynamics in $G$.
 
-\> **(2) Limit Prediction**: Given a game $G$ and a mixed strategy profile $x$,
-\> compute the attractor to which the replicator dynamic converges starting at
-\> $x$.
+> **(2) Limit Prediction**: Given a game $G$ and a mixed strategy profile $x$,
+> compute the attractor to which the replicator dynamic converges starting at
+> $x$.
 
 ### Known Results
 
@@ -68,13 +68,13 @@ This reformulation leads to two concrete computational problems:
    recurrent components, guided by a Lyapunov function. In games, these
    components — the attractors of the replicator dynamic — are the natural
    candidates for the "answer" that replaces Nash equilibria.
--   Biggar and Shames (ALT, 2023; ALT, 2024\) characterized the attractor of the
-   replicator dynamic in zero-sum games via the *\*response graph\** and \*chain
-   components\*, providing structural descriptions of the limit behavior.
--   Biggar and Papadimitriou (ALT, 2026\) showed how to compute stable limit
-   cycles of learning in games, and established *\*sink equilibria\** as the
+-   Biggar and Shames (ALT, 2023; ALT, 2024) characterized the attractor of the
+   replicator dynamic in zero-sum games via the **response graph** and **chain
+   components**, providing structural descriptions of the limit behavior.
+-   Biggar and Papadimitriou (ALT, 2026) showed how to compute stable limit
+   cycles of learning in games, and established **sink equilibria** as the
    attractors of learning in a general framework.
--   Hakim, Milionis, Papadimitriou, and Piliouras (SAGT, 2024\) gave a
+-   Hakim, Milionis, Papadimitriou, and Piliouras (SAGT, 2024) gave a
    polynomial-time algorithm for an approximate version of the limit prediction
    problem: given a game and a starting profile, computing (approximately)
    which attractor the replicator dynamic converges to.
@@ -97,28 +97,28 @@ the replicator dynamic starting at $x$.
    of learning in games." arXiv preprint arXiv:2602.11315 (2026).
 *   Biggar, Oliver, and Christos Papadimitriou. "Sink equilibria and the
    attractors of learning in games." Proceedings of The 37th International
-   Conference on Algorithmic Learning Theory (ALT). 2026\.
+   Conference on Algorithmic Learning Theory (ALT). 2026.
 *   Biggar, Oliver, Christos Papadimitriou, and Georgios Piliouras. "On the
    complexity of learning Nash equilibria." arXiv preprint arXiv:2602.16016
    (2026).
 *   Biggar, Oliver, and Iman Shames. "The replicator dynamic, chain components
    and the response graph." Proceedings of The 34th International Conference
-   on Algorithmic Learning Theory (ALT). 2023\.
+   on Algorithmic Learning Theory (ALT). 2023.
 *   Biggar, Oliver, and Iman Shames. "The attractor of the replicator dynamic
    in zero-sum games." Proceedings of The 35th International Conference on
-   Algorithmic Learning Theory (ALT). 2024\.
+   Algorithmic Learning Theory (ALT). 2024.
 *   Conley, Charles C. Isolated Invariant Sets and the Morse Index. American
-   Mathematical Society, 1978\.
+   Mathematical Society, 1978.
 *   Daskalakis, Constantinos, Paul W. Goldberg, and Christos H. Papadimitriou.
    "The complexity of computing a Nash equilibrium." SIAM Journal on Computing
    39.1 (2009): 195–259.
 *   Hakim, Rida, Jason Milionis, Christos Papadimitriou, and Georgios
    Piliouras. "Swim till you sink: computing the limit of a game." International
-   Symposium on Algorithmic Game Theory (SAGT). 2024\.
+   Symposium on Algorithmic Game Theory (SAGT). 2024.
 *   Milionis, Jason, Christos Papadimitriou, Georgios Piliouras, and Kelly
    Spendlove. "An impossibility theorem in game dynamics." Proceedings of the
    National Academy of Sciences 120.41 (2023).
 *   Papadimitriou, Christos, and Georgios Piliouras. "Game dynamics as the
    meaning of a game." ACM SIGecom Exchanges 16.2 (2019): 53–63.
 *   Shapley, Lloyd S. "Some topics in two-person games." Advances in Game
-   Theory. Annals of Mathematics Studies 52\. Princeton University Press, 1964\.
+   Theory. Annals of Mathematics Studies 52. Princeton University Press, 1964.

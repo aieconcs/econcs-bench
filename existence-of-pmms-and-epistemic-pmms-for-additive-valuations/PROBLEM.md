@@ -3,9 +3,9 @@ name: Existence of PMMS and Epistemic PMMS for Additive Valuations
 contributor: Michal Feldman
 ---
 
-# Existence of PMMS and Epistemic PMMS for Additive Valuations
+## Existence of PMMS and Epistemic PMMS for Additive Valuations
 
-## Problem Description
+### Problem Description
 
 Consider a fair-division instance with a set $N$ of $n$ agents and a set $M$ of indivisible goods. Each agent $i \in N$ has an additive valuation function $v_i : 2^M \rightarrow \mathbb{R}_{\geq 0}$, meaning that
 $$
@@ -41,7 +41,7 @@ $$
 
 Thus, each agent can certify the fairness of her own bundle by imagining a suitable repartition of the goods allocated to the other agents. The actual allocation need not satisfy PMMS.
 
-## Known Results
+### Known Results
 
 ### PMMS
 
@@ -60,7 +60,7 @@ For additive valuations, every instance admits a polynomial-time computable $4/5
 
 These results suggest that the epistemic relaxation substantially increases the scope of instances for which exact fairness guarantees can be obtained.
 
-## Research Goals
+### Research Goals
 
 **Open Problem 1.** Does every fair-division instance with additive valuations admit a PMMS allocation?
 
@@ -68,6 +68,6 @@ These results suggest that the epistemic relaxation substantially increases the 
 
 The second question asks whether the epistemic relaxation is sufficient to overcome the difficulties that have so far prevented a proof of PMMS existence. A positive answer would provide a strong fairness guarantee for all additive instances while retaining much of the conceptual appeal of PMMS. A negative answer would demonstrate an inherent limitation of the epistemic approach and identify a setting in which even individualized fairness certificates are insufficient to guarantee existence.
 
-## Key Reference
+### Key Reference
 
 - Michal Feldman, Amos Fiat, Yael Nissan, and Tomasz Ponitka, "Epistemic Pairwise Maximin Share," 2026: https://arxiv.org/abs/2606.18921

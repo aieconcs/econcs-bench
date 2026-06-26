@@ -40,8 +40,8 @@ The key difficulty is the **exponential-size strategy space** of the defender: t
 ### Key References
 
 * Chen, Xi, Xiaotie Deng, and Shang-Hua Teng. "Settling the complexity of computing two-player Nash equilibria." Journal of the ACM 56.3 (2009).
-* Conitzer, Vincent, and Tuomas Sandholm. "Computing the optimal strategy to commit to." Proceedings of the ACM Conference on Electronic Commerce (EC). 2006\.
+* Conitzer, Vincent, and Tuomas Sandholm. "Computing the optimal strategy to commit to." Proceedings of the ACM Conference on Electronic Commerce (EC). 2006.
 * Daskalakis, Constantinos, Paul Goldberg, and Christos H. Papadimitriou. "The complexity of computing a Nash equilibrium." SIAM Journal on Computing 39.1 (2009): 195-259.
-* Kiekintveld, Christopher, Manish Jain, Jason Tsai, James Pita, Fernando Ordóñez, and Milind Tambe. "Computing optimal randomized resource allocations for massive security games." Proceedings of the Eighth International Joint Conference on Autonomous Agents and Multi-Agent Systems (AAMAS). 2009\.
-* Korzhyk, Dmytro, Vincent Conitzer, and Ronald Parr. "Security games with multiple attacker resources." Proceedings of the Twenty-Second International Joint Conference on Artificial Intelligence (IJCAI). 2011\.
+* Kiekintveld, Christopher, Manish Jain, Jason Tsai, James Pita, Fernando Ordóñez, and Milind Tambe. "Computing optimal randomized resource allocations for massive security games." Proceedings of the Eighth International Joint Conference on Autonomous Agents and Multi-Agent Systems (AAMAS). 2009.
+* Korzhyk, Dmytro, Vincent Conitzer, and Ronald Parr. "Security games with multiple attacker resources." Proceedings of the Twenty-Second International Joint Conference on Artificial Intelligence (IJCAI). 2011.
 * von Stengel, Bernhard, and Shmuel Zamir. "Leadership games with convex strategy sets." Games and Economic Behavior 69 (2010): 446-457.
