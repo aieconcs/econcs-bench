@@ -19,21 +19,25 @@ distribution $F$.  Let $\mathrm{OPT}_F$ denote an objective-maximizing
 mechanism for distribution $F$, so $\mathrm{OPT}_F(F)$ is the optimal value
 on $F$.  For a distribution family $\mathcal{D}$ and mechanism class
 $\mathcal{M}$, write:
+
 $$
 \beta(\mathcal{M},\mathcal{D})
   =
   \inf_{M\in \mathcal{M}}\sup_{F\in\mathcal{D}}
   \frac{\mathrm{OPT}_F(F)}{M(F)}.
 $$
+
 Here $M(F)$ is evaluated at the equilibrium selected for mechanism $M$ on
 distribution $F$.  If $\mathcal{M}_{\mathrm{rev}}$ is the
 truthful/revelation subclass and
 $\mathcal{M}_{\mathrm{all}}$ is the broader class of prior-independent mechanisms,
 the revelation gap is:
+
 $$
 \frac{\beta(\mathcal{M}_{\mathrm{rev}},\mathcal{D})}
        {\beta(\mathcal{M}_{\mathrm{all}},\mathcal{D})}.
 $$
+
 The central technical difficulty is that the revelation principle moves
 distributional knowledge into the direct mechanism.  A non-revelation protocol
 can be fixed before the prior is known while agents' equilibrium strategies
@@ -47,20 +51,24 @@ $n$ agents competing for one item.  Agent $i$'s value is drawn i.i.d. from
 an unknown distribution $F$.  All agents share the same public budget $B$.
 An agent with value $v$, allocation probability $x$, and payment $p$ has
 utility:
+
 $$
 vx-p
 $$
+
 if $p\le B$, and utility $-\infty$ if $p>B$.  The hard public budget
 means that ordinary welfare-maximizing allocation rules may not be
 implementable with feasible payments.
 
 For this problem, $M(F)$ is expected welfare:
+
 $$
 M(F)
   =
   \mathbb{E}_{\mathbf{v}\sim F^n}
   \left[\sum_i v_i x_i(\mathbf{v})\right].
 $$
+
 The benchmark $\mathrm{OPT}_F(F)$ is the welfare of the Bayesian
 welfare-optimal mechanism tailored to distribution $F$.  The
 prior-independent mechanism $M$ must be fixed before $F$ is known.
@@ -94,6 +102,7 @@ The central comparison is:
 
 - **Known public-budget revelation-gap interval.**  Because the all-mechanism side is
   exactly $1$, the known revelation gap for public-budget welfare is:
+
 $$
 1.013
   \le
@@ -102,6 +111,7 @@ $$
   \le
   e.
 $$
+
 - **Extensions are known but not tight.**  Feng and Hartline also discuss
   irregular distributions, position environments, and revenue variants.  For
   irregular distributions, the corresponding approximation bounds degrade by a
@@ -113,11 +123,13 @@ Determine the exact truthful prior-independent approximation factor for
 i.i.d. public-budget regular agents.  Since the all-mechanism optimum is
 already $1$, this is exactly the problem of identifying the tight revelation
 gap:
+
 $$
 \text{tight revelation gap}
   =
   \beta(\mathcal{M}_{\mathrm{rev}},\mathcal{D}_{\mathrm{PB}}).
 $$
+
 Concrete open questions:
 - Can the clinching upper bound be improved from $e$ to a constant close to
   the known $1.013$ lower bound?

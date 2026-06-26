@@ -19,21 +19,25 @@ distribution $F$.  Let $\mathrm{OPT}_F$ denote an objective-maximizing
 mechanism for distribution $F$, so $\mathrm{OPT}_F(F)$ is the optimal value
 on $F$.  For a distribution family $\mathcal{D}$ and mechanism class
 $\mathcal{M}$, write:
+
 $$
 \beta(\mathcal{M},\mathcal{D})
   =
   \inf_{M\in \mathcal{M}}\sup_{F\in\mathcal{D}}
   \frac{\mathrm{OPT}_F(F)}{M(F)}.
 $$
+
 Here $M(F)$ is evaluated at the equilibrium selected for mechanism $M$ on
 distribution $F$.  If $\mathcal{M}_{\mathrm{rev}}$ is the
 truthful/revelation subclass and
 $\mathcal{M}_{\mathrm{all}}$ is the broader class of prior-independent mechanisms,
 the revelation gap is:
+
 $$
 \frac{\beta(\mathcal{M}_{\mathrm{rev}},\mathcal{D})}
        {\beta(\mathcal{M}_{\mathrm{all}},\mathcal{D})}.
 $$
+
 The central technical difficulty is that the revelation principle moves
 distributional knowledge into the direct mechanism.  A non-revelation protocol
 can be fixed before the prior is known while agents' equilibrium strategies
@@ -50,13 +54,17 @@ before acting in the non-revelation mechanisms.
 
 For this problem, $M(F)$ is the revenue of mechanism $M$ on distribution $F$.
 The benchmark mechanism $\mathrm{OPT}_F$ posts the monopoly price for $F$, so:
+
 $$
 \mathrm{OPT}_F(F)=\sup_p p(1-F(p)).
 $$
+
 The prior-independent approximation factor of a mechanism $M$ is
+
 $$
 \sup_F \frac{\mathrm{OPT}_F(F)}{M(F)}.
 $$
+
 The cleanest version of the problem focuses on **MHR distributions**.  The two
 mechanism classes in the baseline comparison are:
 - **Truthful sample-pricing mechanisms**: scale-invariant mechanisms that are
@@ -89,6 +97,7 @@ mechanism classes in the baseline comparison are:
 - **Baseline MHR revelation-gap interval.**  Combining the truthful MHR
   interval with the all-mechanism interval from the one-bid/sample-bid model,
   $[1.0737,1.296]$, gives:
+
 $$
 1.190
   \le
@@ -97,6 +106,7 @@ $$
   \le
   1.467.
 $$
+
 - **Regular distributions have a parallel but looser story.**  For regular
   distributions, the truthful factor is in $[1.957,1.996]$, while sample-bid
   gives an all-mechanism upper bound of $1.835$.  This proves a nontrivial
@@ -119,6 +129,7 @@ $$
 
 Identify the tight MHR revelation gap for one-sample revenue maximization.
 In the Feng--Hartline--Li one-bid/sample-bid formulation, this means closing
+
 $$
 1.190
   \le
@@ -126,6 +137,7 @@ $$
   \le
   1.467.
 $$
+
 Concrete open questions:
 - What is the exact all-mechanism prior-independent approximation factor for
   MHR one-sample pricing?  In the one-bid/sample-bid formulation, the known
