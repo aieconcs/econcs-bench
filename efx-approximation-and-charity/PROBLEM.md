@@ -12,17 +12,13 @@ In the **fair division of indivisible resources**, there is a set $M=\{1,\ldots,
 An allocation $A=(A_1,A_2,\ldots,A_n)$ is a partition of the items among the agents. Because exact envy-freeness is generally unattainable with indivisible items (e.g., allocating a single diamond to two agents), the literature focuses on relaxations. The most promising candidate solution concept is **Envy-Free up to Any Good (EFX)**.
 
 An allocation is **EFX for goods** if no agent $i$ envies any other agent $j$ after the hypothetical removal of any single good $g$ from agent $j$'s bundle:
-
 $$
 v_i(A_i) \geq v_i(A_j \setminus \{g\}) \quad \text{for all } i, j \in N \text{ and for all } g \in A_j.
 $$
-
 Symmetrically, an allocation is **EFX for chores** if agent $i$'s envy toward another agent $j$ is eliminated if any single chore is removed from agent $i$'s own bundle:
-
 $$
 c_i(A_i \setminus \{g\}) \leq c_i(A_j) \quad \text{for all } i, j \in N \text{ and for all } g \in A_i.
 $$
-
 Because exact EFX allocations are not guaranteed to exist for all valuation classes, several meaningful variants are studied:
 
 - **$\alpha$-Approximate EFX**: For goods, an allocation is $\alpha$-EFX (for $\alpha\in[0,1]$) if $v_i(A_i)\geq \alpha\cdot v_i(A_j\setminus\{g\})$ for all $i,j\in N$ and $g\in A_j$. The notion is similarly defined for chores.

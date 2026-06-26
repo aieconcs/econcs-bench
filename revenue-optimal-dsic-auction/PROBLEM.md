@@ -33,9 +33,9 @@ N$, $v_i\in V_i$, and $\bm b_{-i}\in V_{-i}$.
 
 The optimal auction design problem is to identify a DSIC and IR auction
 maximizing expected revenue:
-
-$$\mathcal{R}(\bm F)=\sup_{(g,p)\in \mathrm{DSIC}\cap \mathrm{IR}}\mathbb{E}_{\bm v\sim \bm F}\left[\sum_{i=1}^n p_i(\bm v)\right].$$
-
+$$
+\mathcal{R}(\bm F)=\sup_{(g,p)\in \mathrm{DSIC}\cap \mathrm{IR}}\mathbb{E}_{\bm v\sim \bm F}\left[\sum_{i=1}^n p_i(\bm v)\right].
+$$
 ### Research Goal
 
 (1) **Computational Goal**: For some continuous distribution $\bm F$, some $n>1$

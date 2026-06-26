@@ -20,11 +20,9 @@ The goal is to maximize the **social welfare** $\sum_{\ell=1}^m v_\ell(S_\ell)$,
 - **Random order**: The adversary chooses the instance (items and valuation functions), but the items arrive in a **uniformly random permutation**. This is the model we study.
 
 The **competitive ratio** of an online algorithm $\text{ALG}$ is:
-
 $$
 \rho = \inf_{\text{instances}} \frac{\mathbb{E}[\text{ALG}]}{\text{OPT}},
 $$
-
 where $\text{OPT}$ is the optimal offline social welfare and the expectation is over the random arrival order (and any randomness of the algorithm).
 
 ### Known Results
@@ -38,11 +36,9 @@ where $\text{OPT}$ is the optimal offline social welfare and the expectation is 
 ### Research Goal
 
 Design an algorithm for the **Online Submodular Welfare Maximization** problem in the **random order model** that achieves a competitive ratio of at least $1/2 + 0.01 = 0.51$. That is, for any instance with monotone submodular valuations, the algorithm must produce an allocation satisfying:
-
 $$
 \mathbb{E}\left[\sum_{\ell=1}^m v_\ell(S_\ell)\right] \geq 0.51 \cdot \text{OPT},
 $$
-
 where the expectation is over the uniformly random arrival order and any internal randomness of the algorithm.
 
 The algorithm may use the greedy approach as a starting point, but significant new ideas will likely be needed. Possible directions include:

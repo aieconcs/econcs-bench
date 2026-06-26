@@ -21,7 +21,6 @@ An allocation $X = (X_1, \ldots, X_n)$ is an **$\alpha$-MMS allocation** if, for
 $$
 v_i(X_i) \geq \alpha \cdot \text{MMS}_i(n, M).
 $$
-
 It is known that for $n = 3$ additive agents, an exact MMS allocation (i.e., $\alpha = 1$) might not exist.
 
 ### Truthful Mechanisms

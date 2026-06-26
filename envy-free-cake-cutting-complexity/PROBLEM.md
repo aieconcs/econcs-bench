@@ -16,7 +16,6 @@ $$
 v_i(A_i)\geq v_i(A_j)
 \qquad \text{for all } i,j\in N.
 $$
-
 The standard model for studying the complexity of cake cutting is the **Robertson--Webb (RW) model**, in which an algorithm can access valuations only through two types of oracle queries:
 
 * **Cut Query:** $\mathrm{Cut}_i(x,\alpha)$ asks agent $i$ to identify a point $y\geq x$ such that $v_i([x,y])=\alpha$.
@@ -35,7 +34,6 @@ The complexity of a cake-cutting algorithm is measured by the number of RW queri
 $$
 O\left(n^{n^{n^{n^{n^n}}}}\right).
 $$
-
 * On the lower-bound side, Procaccia (2009) proved a lower bound of $\Omega(n^2)$.
 
 ### Research Goal

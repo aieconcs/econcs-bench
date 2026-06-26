@@ -25,7 +25,6 @@ An allocation $X=(X_1,\ldots,X_n)$ is **pairwise maximin share fair** (PMMS) if,
 $$
 v_i(X_i)\geq \mu_i(2,X_i\cup X_j).
 $$
-
 Equivalently, if agents $i$ and $j$ pool their allocated goods and agent $i$ acts as the cutter in a cut-and-choose procedure, then agent $i$ should already receive at least the value she could guarantee herself.
 
 ### Epistemic PMMS
@@ -38,7 +37,6 @@ such that $Y^i_i=X_i$ and agent $i$ is PMMS-satisfied with respect to $Y^i$. For
 $$
 v_i(X_i)\geq \mu_i(2,Y^i_i\cup Y^i_j).
 $$
-
 Thus, each agent can certify the fairness of her own bundle by imagining a suitable repartition of the goods allocated to the other agents. The actual allocation need not satisfy PMMS.
 
 ### Known Results
