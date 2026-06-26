@@ -7,11 +7,11 @@ contributor: Simina Branzei and Ariel Procaccia
 
 ### Problem Description
 
-In the **fair division of indivisible resources**, there is a set $M=\{1,\ldots,m\}$ of items and a set $N=\{1,\ldots,n\}$ of agents. Each agent $i\in N$ has a valuation function $v_i:2^M\rightarrow \mathbb{R}_{\geq 0}$, typically assumed to be monotone. A valuation is **additive** if $v_i(S) = \sum_{j\in S} v_i(\{j\})$ for all $S\subseteq M$.
+In the **fair division of indivisible resources**, there is a set $M=\{1,\ldots,m\}$ of goods and a set $N=\{1,\ldots,n\}$ of agents. Each agent $i\in N$ has a valuation function $v_i:2^M\rightarrow \mathbb{R}_{\geq 0}$, typically assumed to be monotone. A valuation is **additive** if $v_i(S) = \sum_{j\in S} v_i(\{j\})$ for all $S\subseteq M$.
 
 An allocation $A=(A_1,A_2,\ldots,A_n)$ is a partition of the items among the agents. Because exact envy-freeness is generally unattainable with indivisible items (e.g., allocating a single diamond to two agents), the literature focuses on relaxations. The most promising candidate solution concept is **Envy-Free up to Any Good (EFX)**.
 
-An allocation is **EFX** if no agent envies another after the hypothetical removal of any single good from the envied agent's bundle:
+An allocation is **EFX** if no agent $i$ envies any other agent $j$ after the hypothetical removal of any single good $g$ from agent $j$'s bundle:
 
 $$
 v_i(A_i) \geq v_i(A_j \setminus \{g\}) \quad \text{for all } i, j \in N \text{ and for all } g \in A_j.
@@ -32,7 +32,7 @@ $$
 
 ### Research Goal
 
-Do exact EFX allocations always exist for the canonical case of **additive valuations** for $n\geq 4$ agents? The case of 3 agents is resolved (Chaudhury, Garg, and Mehlhorn, 2024), and all known counterexamples to EFX explicitly rely on submodular/subadditive complementarities, leaving the additive case as the central open question in fair division.
+Do exact EFX allocations always exist for the canonical case of **additive valuations** for $n\geq 4$ agents? The case of 3 agents is resolved (Chaudhury, Garg, and Mehlhorn, 2024), and for 3 types of agents is resolved as well. All known counterexamples to EFX existence are for more general types of valuations (submodular/subadditive), leaving the additive case as the central open question in fair division.
 
 ### Key References
 
@@ -40,3 +40,4 @@ Do exact EFX allocations always exist for the canonical case of **additive valua
 * Akrami, Hannaneh, Ivan Mayorov, Kurt Mehlhorn, S. Srinivas, and Christoph Weidenbach. "A Counterexample to EFX: $n \ge 3$ Agents, $m \ge n+5$ Items, Submodular Valuations via SAT-Solving." arXiv Preprint (2026). Available at https://arxiv.org/abs/2604.18216.
 * Chaudhury, Bhaskar Ray, Jugal Garg, and Kurt Mehlhorn. "EFX Exists for Three Agents." Journal of the ACM (2024).
 * Plaut, Benjamin, and Tim Roughgarden. "Almost Envy-Freeness with General Valuations." SIAM Journal on Discrete Mathematics 34.2 (2020): 1039-1068.
+* Vishwa Prakash HV, Pratik Ghosal, Prajakta Nimbhorkar, Nithin Varma. "EFX Exists for Three Types of Agents", ACM EC 2025, Available at https://arxiv.org/abs/2410.13580.

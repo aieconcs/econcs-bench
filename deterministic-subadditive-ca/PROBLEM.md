@@ -11,9 +11,9 @@ contributor: Shahar Dobzinski
 
 In a **combinatorial auction** $m$ indivisible items are being auctioned among
 $n$ bidders.  Each bidder $i$ has a **valuation function** $v_i : 2^M
-\rightarrow R$. Each valuation function is monotone (for each item j and bundle
-S, v\_i(S+{j})\\geq v\_i(S)) and normalized (v\_i(\\emptyset)=0). The goal is to find
-an allocation $(S_1, S_2, …, S_n)$ (if i\\neq j then S\_i\\cap S\_j=\\emptyset) that
+\rightarrow R$. Each valuation function is monotone (for each item $j$ and bundle
+$S$, $v_i(S+\{j\})\geq v_i(S)$) and normalized ($v_i(\emptyset)=0$). The goal is to find
+an allocation $(S_1, S_2, \ldots, S_n)$ (if $i\neq j$ then $S_i\cap S_j=\emptyset$) that
 maximizes **social welfare**, $\sum_i v_i(S_i)$.
 
 #### Model of Computation

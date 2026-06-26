@@ -26,3 +26,6 @@ Benchmark suite of open research challenges in Economics and Computation (EconCS
 | Prophet Inequality for Subadditive CA | Paul Duetting | [prophet-inequality-for-subadditive-ca](prophet-inequality-for-subadditive-ca/PROBLEM.md) |
 | Truthful Mechanism for Submodular CA | Sebastien Lahaie | [truthful-mechanism-for-submodular-ca](truthful-mechanism-for-submodular-ca/PROBLEM.md) |
 | Submodular Welfare Maximization with Demand Oracle | Renato Paes Leme | [submodular-welfare-maximization-with-demand-oracle](submodular-welfare-maximization-with-demand-oracle/PROBLEM.md) |
+| Static Posted Pricing for Multi-Unit Combinatorial Auctions | Brendan Lucier | [posted-pricing-multi-unit-xos](posted-pricing-multi-unit-xos/PROBLEM.md) |
+| Black-Box Reductions to DSIC Mechanism Design | Brendan Lucier | [black-box-dsic-mechanism-design](black-box-dsic-mechanism-design/PROBLEM.md) |
+| Matroid Intersection Prophet Inequalities | Matt Weinberg | [matroid-intersection-prophet-inequality](matroid-intersection-prophet-inequality/PROBLEM.md) |
