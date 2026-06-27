@@ -59,8 +59,7 @@ implementable with feasible payments.
 For this problem, $M(F)$ is expected welfare:
 
 $$
-M(F)
-  =
+M(F) =
   \mathbb{E}_{\mathbf{v}\sim F^n}
   \left[\sum_i v_i x_i(\mathbf{v})\right].
 $$
@@ -121,8 +120,7 @@ already $1$, this is exactly the problem of identifying the tight revelation
 gap:
 
 $$
-\text{tight revelation gap}
-  =
+\text{tight revelation gap} =
   \beta(\mathcal{M}_{\mathrm{rev}},\mathcal{D}_{\mathrm{PB}}).
 $$
 
