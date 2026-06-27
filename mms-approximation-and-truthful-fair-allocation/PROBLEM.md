@@ -13,7 +13,7 @@ Consider a fair-division instance with a set $N$ of $n$ agents and a set $M$ of 
 
 The **maximin share** of agent $i$ with respect to $n$ agents and goods $M$ is
 $$
-\text{MMS}\_i(n, M) = \max\_{(A\_1, \ldots, A\_n)} \min\_{j \in [n]} v\_i(A\_j),
+\text{MMS}_i(n, M) = \max_{(A_1, \ldots, A_n)} \min_{j \in [n]} v_i(A_j),
 $$
 where the maximum is taken over all partitions of $M$ into $n$ bundles.
 
