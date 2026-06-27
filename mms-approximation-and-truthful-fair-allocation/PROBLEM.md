@@ -12,6 +12,7 @@ Consider a fair-division instance with a set $N$ of $n$ agents and a set $M$ of 
 ### Maximin Share (MMS)
 
 The **maximin share** of agent $i$ with respect to $n$ agents and goods $M$ is
+
 $$
 \text{MMS}_i(n, M) = \max_{(A_1, \ldots, A_n)} \min_{j \in [n]} v_i(A_j),
 $$
