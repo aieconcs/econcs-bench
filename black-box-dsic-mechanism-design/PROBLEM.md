@@ -7,7 +7,7 @@ contributor: Brendan Lucier
 
 ### Problem Description
 
-Consider $n$ agents with **single-dimensional types**: each agent $i$ has a private value $v_i \in \mathbb{R}_{\geq 0}$, drawn independently from a known distribution $F_i$. An **algorithm** $\mathcal{A}$ maps a vector of values $(v_1, \ldots, v_n)$ to an allocation $(x_1, \ldots, x_n) \in [0,1]^n$, subject to an unknown feasibility constraint. The **social welfare** of an allocation is $\sum_{i=1}^{n} v_i \cdot x_i$.
+Consider $n$ agents with **single-dimensional types**: each agent $i$ has a private value $v_i \in \mathbb{R}\_{\geq 0}$, drawn independently from a known distribution $F_i$. An **algorithm** $\mathcal{A}$ maps a vector of values $(v_1, \ldots, v_n)$ to an allocation $(x_1, \ldots, x_n) \in [0,1]^n$, subject to an unknown feasibility constraint. The **social welfare** of an allocation is $\sum\_{i=1}^{n} v_i \cdot x_i$.
 
 A **simulator** has black-box (oracle) access to $\mathcal{A}$: given any valuation profile, it can query $\mathcal{A}$ to obtain the corresponding allocation. The simulator knows only that any allocation returned by $\mathcal{A}$ is feasible, but has no other knowledge of the feasibility constraint.
 

@@ -11,9 +11,9 @@ A **Bayesian simple security game** consists of:
 - A set of **targets** $T$.
 - A number of **defensive resources** $r\leq |T|$ for the defender.
 - A set of **attacker types** $\Theta$ with a probability distribution over them.
-- For every target $t\in T$: defender utilities $u_1^0(t)$ and $u_1^1(t)$ with $u_1^0(t)\leq u_1^1(t)$ (the defender prefers that an attacked target is defended), and for every attacker type $\theta\in\Theta$: attacker utilities $u_2^0(\theta,t)$ and $u_2^1(\theta,t)$ with $u_2^0(\theta,t)\geq u_2^1(\theta,t)$ (the attacker prefers that the attacked target is undefended).
+- For every target $t\in T$: defender utilities $u\_1^0(t)$ and $u\_1^1(t)$ with $u\_1^0(t)\leq u\_1^1(t)$ (the defender prefers that an attacked target is defended), and for every attacker type $\theta\in\Theta$: attacker utilities $u\_2^0(\theta,t)$ and $u\_2^1(\theta,t)$ with $u\_2^0(\theta,t)\geq u\_2^1(\theta,t)$ (the attacker prefers that the attacked target is undefended).
 
-The game proceeds as follows. The **defender** chooses a subset of $r$ targets to assign her resources to. The **attacker**, after learning his type $\theta$, chooses a target $t$ to attack. If no defensive resource was assigned to $t$, the defender and attacker receive utilities $u_1^0(t)$ and $u_2^0(\theta,t)$, respectively. If a defensive resource was assigned to $t$, they receive $u_1^1(t)$ and $u_2^1(\theta,t)$, respectively.
+The game proceeds as follows. The **defender** chooses a subset of $r$ targets to assign her resources to. The **attacker**, after learning his type $\theta$, chooses a target $t$ to attack. If no defensive resource was assigned to $t$, the defender and attacker receive utilities $u\_1^0(t)$ and $u\_2^0(\theta,t)$, respectively. If a defensive resource was assigned to $t$, they receive $u\_1^1(t)$ and $u\_2^1(\theta,t)$, respectively.
 
 A **(Bayes-)Nash equilibrium** is a pair of strategies — a mixed strategy for the defender over subsets of $r$ targets, and a mapping from attacker types to (mixed) target choices — such that neither player can improve their expected utility by unilateral deviation.
 

@@ -21,17 +21,13 @@ on $F$.  For a distribution family $\mathcal{D}$ and mechanism class
 $\mathcal{M}$, write:
 
 $$
-\beta(\mathcal{M},\mathcal{D})
-  =
+\beta(\mathcal{M},\mathcal{D}) =
   \inf_{M\in \mathcal{M}}\sup_{F\in\mathcal{D}}
   \frac{\mathrm{OPT}_F(F)}{M(F)}.
 $$
 
-Here $M(F)$ is evaluated at the equilibrium selected for mechanism $M$ on
-distribution $F$.  If $\mathcal{M}_{\mathrm{rev}}$ is the
-truthful/revelation subclass and
-$\mathcal{M}_{\mathrm{all}}$ is the broader class of prior-independent mechanisms,
-the revelation gap is:
+Here $M(F)$ is evaluated at the equilibrium selected for mechanism $M$ on distribution $F$. If $\mathcal{M}\_{\mathrm{rev}}$ is the
+truthful/revelation subclass and $\mathcal{M}\_{\mathrm{all}}$ is the broader class of prior-independent mechanisms, the revelation gap is:
 
 $$
 \frac{\beta(\mathcal{M}_{\mathrm{rev}},\mathcal{D})}

@@ -9,10 +9,10 @@ contributor: Jeff Jiang, David Parkes and Tonghan Wang
 
 We consider **sealed-bid auctions** with a set of $n$ bidders,
 $N=\{1,\ldots,n\}$, and $m$ items, $M=\{1,\ldots,m\}$, with $m>1$ and $n>1$.
-Bidder $i$ has a valuation function $v_i:2^M\rightarrow \mathbb{R}_{\ge 0}$.
+Bidder $i$ has a valuation function $v_i:2^M\rightarrow \mathbb{R}\_{\ge 0}$.
 Valuations are continuous. We consider both **additive valuations**, where
-$v_i(S)=\sum_{j\in S}v_i(j)$, and **unit-demand valuations**, where
-$v_i(S)=\max_{j\in S}v_i(j)$.
+$v_i(S)=\sum\_{j\in S}v_i(j)$, and **unit-demand valuations**, where
+$v_i(S)=\max\_{j\in S}v_i(j)$.
 
 Valuation $v_i$ is drawn independently from a known distribution $F_i$ over
 $V_i$, with $v_i(j)\in[0,v_{\max}]$ for all $i,j$. Let $\bm F=(F_1,\ldots,F_n)$,
@@ -26,10 +26,10 @@ $u_i(v_i;\bm b)=v_i(g_i(\bm b))-p_i(\bm b)$. In full generality, the allocation
 rule may be randomized.
 
 The auction is **dominant-strategy incentive compatible (DSIC)**, or
-**strategy-proof (SP)**, if $u_i(v_i;(v_i,\bm b_{-i}))\geq u_i(v_i;(b_i,\bm
-b_{-i}))$ for all $i\in N$, $v_i,b_i\in V_i$, and $\bm b_{-i}\in V_{-i}$. It is
-**individually rational (IR)** if $u_i(v_i;(v_i,\bm b_{-i}))\geq 0$ for all $i\in
-N$, $v_i\in V_i$, and $\bm b_{-i}\in V_{-i}$.
+**strategy-proof (SP)**, if $u_i(v_i;(v_i,\bm b\_{-i}))\geq u_i(v_i;(b_i,\bm
+b\_{-i}))$ for all $i\in N$, $v_i,b_i\in V_i$, and $\bm b\_{-i}\in V\_{-i}$. It is
+**individually rational (IR)** if $u_i(v_i;(v_i,\bm b\_{-i}))\geq 0$ for all $i\in
+N$, $v_i\in V_i$, and $\bm b\_{-i}\in V\_{-i}$.
 
 The optimal auction design problem is to identify a DSIC and IR auction
 maximizing expected revenue:

@@ -7,11 +7,11 @@ contributor: Paul Duetting
 
 ### Problem Description
 
-Consider a combinatorial auction with a set $M$ of $m$ items and a set $N$ of $n$ buyers. Each buyer $i \in N$ has a valuation function $v_i : 2^M \to \mathbb{R}_{\geq 0}$. We assume that each $v_i$ is drawn independently from a known prior distribution $\mathcal{D}_i$. The buyers arrive online in a fixed (or adversarial) order.
+Consider a combinatorial auction with a set $M$ of $m$ items and a set $N$ of $n$ buyers. Each buyer $i \in N$ has a valuation function $v_i : 2^M \to \mathbb{R}\_{\geq 0}$. We assume that each $v_i$ is drawn independently from a known prior distribution $\mathcal{D}_i$. The buyers arrive online in a fixed (or adversarial) order.
 
 We focus on **subadditive** valuations, meaning that for any buyer $i$ and any two bundles $S, T \subseteq M$, $v_i(S \cup T) \leq v_i(S) + v_i(T)$.
 
-The seller wishes to post **static item prices** $p \in \mathbb{R}_{\geq 0}^m$. When buyer $i$ arrives, they observe the remaining set of unsold items $M_i \subseteq M$ and the prices $p$, and select a bundle $S_i \subseteq M_i$ that maximizes their quasi-linear utility:
+The seller wishes to post **static item prices** $p \in \mathbb{R}\_{\geq 0}^m$. When buyer $i$ arrives, they observe the remaining set of unsold items $M_i \subseteq M$ and the prices $p$, and select a bundle $S_i \subseteq M_i$ that maximizes their quasi-linear utility:
 $$
 S_i \in \arg\max_{S \subseteq M_i} \left( v_i(S) - \sum_{j \in S} p_j \right)
 $$

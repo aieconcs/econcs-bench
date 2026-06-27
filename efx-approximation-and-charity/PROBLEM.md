@@ -7,7 +7,7 @@ contributor: Simina Branzei
 
 ### Problem Description
 
-In the **fair division of indivisible resources**, there is a set $M=\{1,\ldots,m\}$ of items and a set $N=\{1,\ldots,n\}$ of agents. Each agent $i\in N$ has a valuation function $v_i:2^M\rightarrow \mathbb{R}_{\geq 0}$ (for goods) or a cost function $c_i:2^M\rightarrow \mathbb{R}_{\geq 0}$ (for chores), typically assumed to be monotone. Common classes of valuations include additive, submodular, and subadditive.
+In the **fair division of indivisible resources**, there is a set $M=\{1,\ldots,m\}$ of items and a set $N=\{1,\ldots,n\}$ of agents. Each agent $i\in N$ has a valuation function $v_i:2^M\rightarrow \mathbb{R}\_{\geq 0}$ (for goods) or a cost function $c_i:2^M\rightarrow \mathbb{R}\_{\geq 0}$ (for chores), typically assumed to be monotone. Common classes of valuations include additive, submodular, and subadditive.
 
 An allocation $A=(A_1,A_2,\ldots,A_n)$ is a partition of the items among the agents. Because exact envy-freeness is generally unattainable with indivisible items (e.g., allocating a single diamond to two agents), the literature focuses on relaxations. The most promising candidate solution concept is **Envy-Free up to Any Good (EFX)**.
 

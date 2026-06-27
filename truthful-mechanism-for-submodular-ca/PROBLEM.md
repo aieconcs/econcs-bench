@@ -7,7 +7,7 @@ contributor: Sebastien Lahaie
 
 ### Problem Description
 
-In a **combinatorial auction**, there is a set $M$ of $m$ indivisible items and a set $N$ of $n$ bidders. Each bidder $i \in N$ has a **monotone submodular** valuation function $v_i : 2^M \to \mathbb{R}_{\geq 0}$ with $v_i(\emptyset) = 0$, satisfying:
+In a **combinatorial auction**, there is a set $M$ of $m$ indivisible items and a set $N$ of $n$ bidders. Each bidder $i \in N$ has a **monotone submodular** valuation function $v_i : 2^M \to \mathbb{R}\_{\geq 0}$ with $v_i(\emptyset) = 0$, satisfying:
 - **Monotonicity**: $v_i(S) \leq v_i(T)$ for all $S \subseteq T \subseteq M$.
 - **Submodularity (diminishing returns)**: $v_i(S \cup \{j\}) - v_i(S) \geq v_i(T \cup \{j\}) - v_i(T)$ for all $S \subseteq T \subseteq M$ and $j \notin T$.
 
@@ -15,7 +15,7 @@ The goal is to find an allocation $(S_1, S_2, \ldots, S_n)$ that is a partition 
 $$
 \text{maximize} \quad \sum_{i=1}^n v_i(S_i).
 $$
-The valuations are private information of the bidders, accessed through **demand oracle queries**: given a price vector $p \in \mathbb{R}^m_{\geq 0}$, the oracle for bidder $i$ returns $S^* \in \arg\max_{S \subseteq M} \left(v_i(S) - \sum_{j \in S} p_j\right)$.
+The valuations are private information of the bidders, accessed through **demand oracle queries**: given a price vector $p \in \mathbb{R}^m\_{\geq 0}$, the oracle for bidder $i$ returns $S^* \in \arg\max\_{S \subseteq M} \left(v_i(S) - \sum_{j \in S} p_j\right)$.
 
 A mechanism is **(universally) truthful** if it is a probability distribution over deterministic truthful mechanisms—i.e., no bidder can improve their outcome by misreporting their valuation, regardless of the mechanism's random coins.
 

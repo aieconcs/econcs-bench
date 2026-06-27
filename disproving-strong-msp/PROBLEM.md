@@ -29,7 +29,7 @@ $$
 
 **Strong Matroid Secretary Conjecture (SMSC)**: For every matroid $\mathcal{M}$, $\alpha^*(\mathcal{M}) \geq 1/e$.
 
-The SMSC generalizes the classical secretary problem: for $U_{n,1}$ (the rank-1 uniform matroid — pick at most one element), the optimal competitive ratio is exactly $1/e$ as $n \to \infty$, achieved by the classic "wait-then-pick" algorithm that rejects the first $\lfloor n/e \rfloor$ elements and then accepts the first element exceeding all previously seen values. Since any matroid contains $U_{n,1}$ as a restriction (by considering a single element), $1/e$ is the best possible target for a universal guarantee.
+The SMSC generalizes the classical secretary problem: for $U\_{n,1}$ (the rank-1 uniform matroid — pick at most one element), the optimal competitive ratio is exactly $1/e$ as $n \to \infty$, achieved by the classic "wait-then-pick" algorithm that rejects the first $\lfloor n/e \rfloor$ elements and then accepts the first element exceeding all previously seen values. Since any matroid contains $U\_{n,1}$ as a restriction (by considering a single element), $1/e$ is the best possible target for a universal guarantee.
 
 ### Known Results
 
@@ -57,7 +57,7 @@ The best known competitive ratio for general matroids is $\Omega(1/\log \log r)$
 | Gammoids | $O(1)$ | Soto (2011) |
 
 **Lower bounds (impossibility results):**
-- The classical secretary problem gives $\alpha^*(U_{n,1}) = 1/e$, which is **tight**: no algorithm achieves competitive ratio $> 1/e$ for $U_{n,1}$, and the optimal algorithm matches this.
+- The classical secretary problem gives $\alpha^*(U\_{n,1}) = 1/e$, which is **tight**: no algorithm achieves competitive ratio $> 1/e$ for $U\_{n,1}$, and the optimal algorithm matches this.
 - There are **no known impossibility results** ruling out a $1/e$-competitive algorithm when the matroid is known. The SMSC is neither proved nor disproved.
 
 ### Research Goal
@@ -76,7 +76,7 @@ $$
 
 ### The Ordinal Matroid Secretary Problem
 
-In the **ordinal MSP**, the algorithm does not see numerical weights. Instead, upon arrival of element $e_t$ at time $t$, the algorithm learns only the **relative ranking** of $e_t$ among all elements seen so far: i.e., it knows the total order on $\{e_{\sigma(1)}, \ldots, e_{\sigma(t)}\}$ induced by $w$, but not the values $w(e_{\sigma(i)})$ themselves.
+In the **ordinal MSP**, the algorithm does not see numerical weights. Instead, upon arrival of element $e_t$ at time $t$, the algorithm learns only the **relative ranking** of $e_t$ among all elements seen so far: i.e., it knows the total order on $\{e\_{\sigma(1)}, \ldots, e\_{\sigma(t)}\}$ induced by $w$, but not the values $w(e\_{\sigma(i)})$ themselves.
 
 An **ordinal algorithm** is one whose accept/reject decisions depend only on:
 - The matroid $\mathcal{M}$,
@@ -90,7 +90,7 @@ $$
 $$
 Since ordinal algorithms are a subset of all algorithms, $\alpha^*_{\mathrm{ord}}(\mathcal{M}) \leq \alpha^*(\mathcal{M})$ for all $\mathcal{M}$.
 
-**Key observation for rank 1:** For $U_{n,1}$, the classical optimal algorithm ("skip $\lfloor n/e \rfloor$, then pick the next record") is inherently ordinal — it uses only comparisons, never actual values. Therefore $\alpha^*_{\mathrm{ord}}(U_{n,1}) = \alpha^*(U_{n,1}) = 1/e$, and there is no separation between ordinal and cardinal algorithms for rank 1\.
+**Key observation for rank 1:** For $U\_{n,1}$, the classical optimal algorithm ("skip $\lfloor n/e \rfloor$, then pick the next record") is inherently ordinal — it uses only comparisons, never actual values. Therefore $\alpha^*\_{\mathrm{ord}}(U\_{n,1}) = \alpha^*(U\_{n,1}) = 1/e$, and there is no separation between ordinal and cardinal algorithms for rank 1\.
 
 **Why ordinal is easier to attack for higher rank:** For matroids of rank $r \geq 2$, cardinal algorithms can use the actual numerical weights to set thresholds, estimate the optimal value, or calibrate acceptance probabilities — strategies unavailable to ordinal algorithms. An ordinal algorithm that must select multiple elements faces an inherent information bottleneck: knowing only that element $e$ is the "3rd best seen so far" provides no information about how $w(e)$ compares to the maximum weight, which affects how much accepting $e$ costs in the competitive ratio.
 

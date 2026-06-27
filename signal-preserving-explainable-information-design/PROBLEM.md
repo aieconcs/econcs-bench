@@ -16,7 +16,7 @@ A general $K$-signal scheme may randomize or pool disconnected subsets of states
 $$
 0=a_0\le a_1\le \cdots \le a_K=1,
 $$
-and send one signal for each interval $[a_{i-1},a_i]$. Under the uniform prior, the posterior mean induced by interval $[a_{i-1},a_i]$ is $(a_{i-1}+a_i)/2$.
+and send one signal for each interval $[a\_{i-1},a_i]$. Under the uniform prior, the posterior mean induced by interval $[a\_{i-1},a_i]$ is $(a\_{i-1}+a_i)/2$.
 
 
 Let $\mathrm{OPT}_I(K)$ be the optimal designer payoff over all signaling schemes with at most $K$ signals, and let $\mathrm{OPT}^{\mathrm{part}}_I(K)$ be the optimal payoff over $K$-interval-partitional signaling schemes.

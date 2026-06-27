@@ -17,7 +17,7 @@ The “input size” here is $m$ real numbers for each of the $n$ players.  As w
 
 #### Incentive Compatibility
 
-We are looking for a **deterministic, dominant strategy incentive compatible (DSIC) mechanism**.  A deterministic mechanism $M$ receives as input the valuations $v_1…v_n$ and produces as output an allocation $m_1…m_n$ (with $\sum_i m_i \le m$) and payment amounts $p_1…p_n$ from the bidders to the auctioneer.  DSIC means that for every player $i$, every valuation $v_i$ of player $i$, every possible valuations of the other players $v_{-i}$, and every possible "fake bid" $v'_i$ of player $i$, if we denote by $(m_i, p_i)$ the outcome of the mechanism for player $i$ on inputs $(v_i,v_{-i})$ and denote by $(m'_i, p'_i)$ the outcome of the mechanism for player $i$ on inputs $(v'_i,v_{-i})$ then we have $v_i(m_i)-p_i \ge v_i(m'_i)-p'_i$.
+We are looking for a **deterministic, dominant strategy incentive compatible (DSIC) mechanism**.  A deterministic mechanism $M$ receives as input the valuations $v_1…v_n$ and produces as output an allocation $m_1…m_n$ (with $\sum_i m_i \le m$) and payment amounts $p_1…p_n$ from the bidders to the auctioneer.  DSIC means that for every player $i$, every valuation $v_i$ of player $i$, every possible valuations of the other players $v\_{-i}$, and every possible "fake bid" $v'_i$ of player $i$, if we denote by $(m_i, p_i)$ the outcome of the mechanism for player $i$ on inputs $(v_i,v\_{-i})$ and denote by $(m'_i, p'_i)$ the outcome of the mechanism for player $i$ on inputs $(v'_i,v\_{-i})$ then we have $v_i(m_i)-p_i \ge v_i(m'_i)-p'_i$.
 
 ### What is known
 

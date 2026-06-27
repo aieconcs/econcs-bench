@@ -19,7 +19,7 @@ A function $v : 2^M \to \mathbb{R}_{\geq 0}$ is **monotone submodular** if:
 The valuation functions are accessed through oracles. Two important oracle models are:
 
 1\. **Value Oracle**: Given a set $S \subseteq M$, returns $v_i(S).$
-2\. **Demand Oracle**: Given a price vector $p \in \mathbb{R}^m_{\geq 0}$, returns the set $S^* \in \arg\max_{S \subseteq M} (v_i(S) - \sum_{j \in S} p_j)$ that maximizes the agent's utility (value minus total price).
+2\. **Demand Oracle**: Given a price vector $p \in \mathbb{R}^m_{\geq 0}$, returns the set $S^* \in \arg\max\_{S \subseteq M} (v_i(S) - \sum\_{j \in S} p_j)$ that maximizes the agent's utility (value minus total price).
 
 The demand oracle is strictly more powerful than the value oracle: a demand oracle can simulate a value oracle with polynomial overhead, but the converse is not true.
 

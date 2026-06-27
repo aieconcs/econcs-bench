@@ -30,11 +30,11 @@ We are looking for a **deterministic, dominant strategy incentive compatible
 valuations $v_1…v_n$ and produces as output an allocation $(S_1…S_n)$ and
 payments $p_1…p_n$ that the participants pay.  DSIC means that for every player
 $i$, every valuation $v_i$ of player $i$, every possible valuations of the other
-players $v_{-i}$, and every other possible $v’_i$ of player $i$, if we denote by
+players $v\_{-i}$, and every other possible $v'_i$ of player $i$, if we denote by
 $(S_i, p_i)$ the outcome of the mechanism for player $i$ on inputs
-$(v_i,v_{-i})$ and denote by $(S’_i, p’_i)$ the outcome of the mechanism for
-player $i$ on inputs $(v’_i,v_{-i})$ then we have $v_i(S_i)-p_i \ge
-v_i(S’_i)-p’_i$.
+$(v_i,v\_{-i})$ and denote by $(S'_i, p'_i)$ the outcome of the mechanism for
+player $i$ on inputs $(v'_i,v\_{-i})$ then we have $v_i(S_i)-p_i \ge
+v_i(S'_i)-p'_i$.
 
 ### What is known
 
