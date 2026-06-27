@@ -8,9 +8,11 @@ contributor: Renato Paes Leme
 ### Problem Description
 
 In the **Submodular Welfare Maximization (SWM)** problem, we are given a set $M$ of $m$ indivisible items and $n$ agents. Each agent $i$ has a monotone submodular valuation function $v_i : 2^M \to \mathbb{R}_{\geq 0}$ with $v_i(\emptyset) = 0$. The goal is to find a partition (or allocation) of items $(S_1, S_2, \ldots, S_n)$ into $n$ disjoint subsets that maximizes the **social welfare**:
+
 $$
 \text{maximize} \quad \sum_{i=1}^n v_i(S_i).
 $$
+
 A function $v : 2^M \to \mathbb{R}_{\geq 0}$ is **monotone submodular** if:
 
 - **Monotonicity**: $v(S) \leq v(T)$ for all $S \subseteq T \subseteq M$.
@@ -32,9 +34,11 @@ The demand oracle is strictly more powerful than the value oracle: a demand orac
 ### Research Goal
 
 Design an algorithm for the **Submodular Welfare Maximization** problem using **demand oracle queries** that achieves an approximation ratio of at least $1 - 1/e + 0.01 \approx 0.642$. That is, for any instance of SWM with monotone submodular valuations, the algorithm must output an allocation $(S_1, \ldots, S_n)$ such that:
+
 $$
 \mathbb{E}\left[\sum_{i=1}^n v_i(S_i)\right] \geq (1 - 1/e + 0.01) \cdot \text{OPT},
 $$
+
 where $\text{OPT} = \max_{(T_1, \ldots, T_n)} \sum_{i=1}^n v_i(T_i)$ is the value of the optimal allocation.
 
 The algorithm should run in polynomial time in $n$ and $m$, using a polynomial number of demand oracle queries.

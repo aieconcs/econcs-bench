@@ -20,6 +20,7 @@ $$
 where the maximum is taken over all partitions of $M$ into $n$ bundles.
 
 An allocation $X = (X_1, \ldots, X_n)$ is an **$\alpha$-MMS allocation** if, for every agent $i \in N$,
+
 $$
 v_i(X_i) \geq \alpha \cdot \text{MMS}_i(n, M).
 $$

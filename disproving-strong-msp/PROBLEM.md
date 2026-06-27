@@ -16,13 +16,17 @@ The **rank** $r = r(\mathcal{M})$ is the size of any maximal independent set (ca
 In the **Matroid Secretary Problem (MSP)**, each element $e \in E$ has a non-negative weight $w(e) \geq 0$. The elements arrive in a **uniformly random order** — a permutation $\sigma$ drawn uniformly from $S_n$. Upon arrival of element $e$, the algorithm observes $w(e)$ and must immediately and irrevocably decide to **accept** or **reject** $e$. The constraint is that the set of accepted elements must remain independent in $\mathcal{M}$ at all times. The objective is to maximize the total weight of accepted elements.
 
 The **competitive ratio** of an algorithm $\mathcal{A}$ on matroid $\mathcal{M}$ is:
+
 $$
 \alpha(\mathcal{A}, \mathcal{M}) = \inf_{w : E \to \mathbb{R}_{\geq 0}} \frac{\mathbb{E}_\sigma[\mathcal{A}(\mathcal{M}, w, \sigma)]}{\mathrm{OPT}(\mathcal{M}, w)}
 $$
+
 where $\mathrm{OPT}(\mathcal{M}, w) = \max_{B \in \mathcal{B}} \sum_{e \in B} w(e)$ is the maximum weight of any base, and the expectation is over the random arrival order $\sigma$. The **optimal competitive ratio** for matroid $\mathcal{M}$ is:
+
 $$
 \alpha^*(\mathcal{M}) = \sup_{\mathcal{A}} \alpha(\mathcal{A}, \mathcal{M}).
 $$
+
 ### The Conjectures
 
 **Matroid Secretary Conjecture (MSC)** (Babaioff, Immorlica, and Kleinberg, 2007): There exists a universal constant $c > 0$ such that for every matroid $\mathcal{M}$, $\alpha^*(\mathcal{M}) \geq c$.
@@ -63,13 +67,17 @@ The best known competitive ratio for general matroids is $\Omega(1/\log \log r)$
 ### Research Goal
 
 **Primary Goal:** Disprove the Strong Matroid Secretary Conjecture by exhibiting a  matroid $\mathcal{M}$ for which no online algorithm can achieve competitive ratio $1/e$. Formally, show that there exists a matroid $\mathcal{M}$ and a constant $\varepsilon > 0$ such that:
+
 $$
 \alpha^*(\mathcal{M}) \leq \frac{1}{e} - \varepsilon.
 $$
+
 That is, for every algorithm $\mathcal{A}$, there exists a weight function $w$ such that:
+
 $$
 \frac{\mathbb{E}_\sigma[\mathcal{A}(\mathcal{M}, w, \sigma)]}{\mathrm{OPT}(\mathcal{M}, w)} \leq \frac{1}{e} - \varepsilon.
 $$
+
 **A Potentially Easier Goal (Ordinal MSP):** Disprove the SMSC in the ordinal (comparison-based) model, where the algorithm only observes relative orderings between element weights, not their actual values. This is described in detail below.
 
 ---
@@ -85,9 +93,11 @@ An **ordinal algorithm** is one whose accept/reject decisions depend only on:
 - Internal randomness.
 
 The **ordinal competitive ratio** is:
+
 $$
 \alpha^*_{\mathrm{ord}}(\mathcal{M}) = \sup_{\mathcal{A} \text{ ordinal}} \;\inf_{w : E \to \mathbb{R}_{\geq 0}} \;\frac{\mathbb{E}_\sigma[\mathcal{A}(\mathcal{M}, w, \sigma)]}{\mathrm{OPT}(\mathcal{M}, w)}.
 $$
+
 Since ordinal algorithms are a subset of all algorithms, $\alpha^*_{\mathrm{ord}}(\mathcal{M}) \leq \alpha^*(\mathcal{M})$ for all $\mathcal{M}$.
 
 **Key observation for rank 1:** For $U\_{n,1}$, the classical optimal algorithm ("skip $\lfloor n/e \rfloor$, then pick the next record") is inherently ordinal — it uses only comparisons, never actual values. Therefore $\alpha^*\_{\mathrm{ord}}(U\_{n,1}) = \alpha^*(U\_{n,1}) = 1/e$, and there is no separation between ordinal and cardinal algorithms for rank 1\.
@@ -95,9 +105,11 @@ Since ordinal algorithms are a subset of all algorithms, $\alpha^*_{\mathrm{ord}
 **Why ordinal is easier to attack for higher rank:** For matroids of rank $r \geq 2$, cardinal algorithms can use the actual numerical weights to set thresholds, estimate the optimal value, or calibrate acceptance probabilities — strategies unavailable to ordinal algorithms. An ordinal algorithm that must select multiple elements faces an inherent information bottleneck: knowing only that element $e$ is the "3rd best seen so far" provides no information about how $w(e)$ compares to the maximum weight, which affects how much accepting $e$ costs in the competitive ratio.
 
 **Goal for the ordinal version:** Find a matroid $\mathcal{M}$ of rank $r \geq 2$ such that:
+
 $$
 \alpha^*_{\mathrm{ord}}(\mathcal{M}) < \frac{1}{e}.
 $$
+
 This means showing that for every ordinal algorithm $\mathcal{A}$, there exists a weight vector $w$ (consistent with the orderings the algorithm might observe) such that $\mathbb{E}[\mathcal{A}]/\mathrm{OPT} < 1/e - \varepsilon$.
 
 > [!NOTE]

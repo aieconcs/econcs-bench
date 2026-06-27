@@ -12,9 +12,11 @@ In a **combinatorial auction**, there is a set $M$ of $m$ indivisible items and 
 - **Submodularity (diminishing returns)**: $v_i(S \cup \{j\}) - v_i(S) \geq v_i(T \cup \{j\}) - v_i(T)$ for all $S \subseteq T \subseteq M$ and $j \notin T$.
 
 The goal is to find an allocation $(S_1, S_2, \ldots, S_n)$ that is a partition of the items among the bidders, maximizing the **social welfare**:
+
 $$
 \text{maximize} \quad \sum_{i=1}^n v_i(S_i).
 $$
+
 The valuations are private information of the bidders, accessed through **demand oracle queries**: given a price vector $p \in \mathbb{R}^m\_{\geq 0}$, the oracle for bidder $i$ returns $S^* \in \arg\max\_{S \subseteq M} \left(v_i(S) - \sum_{j \in S} p_j\right)$.
 
 A mechanism is **(universally) truthful** if it is a probability distribution over deterministic truthful mechanisms—i.e., no bidder can improve their outcome by misreporting their valuation, regardless of the mechanism's random coins.
@@ -38,9 +40,11 @@ For the special case of **submodular** bidders, an improved analysis yields an $
 ### Research Goal
 
 Design a **(universally) truthful** mechanism for combinatorial auctions with **monotone submodular valuations** that achieves an $O(\log \log m)$-approximation to the optimal social welfare, using a polynomial number of demand oracle queries. That is, construct a mechanism such that for any instance:
+
 $$
 \mathbb{E}\left[\sum_{i=1}^n v_i(S_i)\right] \geq \Omega\left(\frac{1}{\log \log m}\right) \cdot \text{OPT},
 $$
+
 where the expectation is over the mechanism's internal randomness.
 
 This would improve upon the current best $O((\log \log m)^2)$-approximation of Assadi, Kesselheim, and Singla (SODA 2021\) by removing one $\log \log m$ factor. Possible directions include:

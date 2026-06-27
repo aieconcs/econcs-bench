@@ -13,9 +13,11 @@ In one-dimensional **linear information design**, a state $\theta \in [0,1]$ is 
 
 
 A general $K$-signal scheme may randomize or pool disconnected subsets of states into the same signal. Such schemes can be optimal but hard to explain or audit. A natural explainable alternative is a **$K$-interval-partitional signaling scheme**: choose thresholds
+
 $$
 0=a_0\le a_1\le \cdots \le a_K=1,
 $$
+
 and send one signal for each interval $[a\_{i-1},a_i]$. Under the uniform prior, the posterior mean induced by interval $[a\_{i-1},a_i]$ is $(a\_{i-1}+a_i)/2$.
 
 
@@ -23,9 +25,11 @@ Let $\mathrm{OPT}_I(K)$ be the optimal designer payoff over all signaling scheme
 
 
 Chen, Lin, Tang, and Tucker-Foltz (EC 2026) show that for the uniform prior, interval-partitional schemes achieve a tight $2/3$-approximation to arbitrary $K$-signal schemes if the partitional scheme is allowed to use more signals: specifically, if $K'\ge 3K/2$, then
+
 $$
 \mathrm{OPT}^{\mathrm{part}}_I(K')\ge \frac{2}{3} \mathrm{OPT}_I(K).
 $$
+
 Their proof starts from an optimal $K$-signal scheme, uses a bi-pooling characterization of optimal schemes, and converts each two-signal bi-pooling interval into a three-interval partitional scheme. Importantly, this conversion process increases the total number of signals from $K$ to at most $3K/2$.
 
 
@@ -36,9 +40,11 @@ Is the signal increase necessary to achieve the $2/3$ approximation?
 
 
 Formally, is it true that for every integer $K\ge 2$, every utility function $u:[0,1]\to[0,1]$, and prior $F=\mathrm{Uniform}[0,1]$,
+
 $$
 \mathrm{OPT}^{\mathrm{part}}_I(K)\ge \frac{2}{3} \mathrm{OPT}_I(K)?
 $$
+
 One approach is to see if every arbitrary $K$-signal scheme under the uniform prior can be converted into a $K$-interval-partitional scheme while losing at most a factor $1/3$ of the payoff.
 
 

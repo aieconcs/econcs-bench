@@ -12,10 +12,12 @@ In the **fair division of a divisible heterogeneous resource**, the resource —
 An allocation of the cake is denoted $A=(A\_1,A\_2,\ldots,A\_n)$, where the pieces $A\_i$ are pairwise disjoint and their union is the entire cake.
 
 An allocation is **envy-free (EF)** if every agent weakly prefers their own piece to that of every other agent:
+
 $$
 v_i(A_i)\geq v_i(A_j)
 \qquad \text{for all } i,j\in N.
 $$
+
 The standard model for studying the complexity of cake cutting is the **Robertson-Webb (RW) model**, in which an algorithm can access valuations only through two types of oracle queries:
 
 * **Cut Query:** $\mathrm{Cut}\_i(x,\alpha)$ asks agent $i$ to identify a point $y\geq x$ such that $v\_i([x,y])=\alpha$.
@@ -31,9 +33,11 @@ The complexity of a cake-cutting algorithm is measured by the number of RW queri
 * For decades, it was unknown whether a finite envy-free protocol exists for an arbitrary number of agents.
 
 * Aziz and Mackenzie (2016) resolved this question by designing the first finite envy-free protocol for any number of agents, but its query complexity is
+
 $$
 O\left(n^{n^{n^{n^{n^n}}}}\right).
 $$
+
 * On the lower-bound side, Procaccia (2009) proved a lower bound of $\Omega(n^2)$.
 
 ### Research Goal

@@ -12,9 +12,11 @@ In the **fair division of indivisible resources**, there is a set $M=\{1,\ldots,
 An allocation $A=(A_1,A_2,\ldots,A_n)$ is a partition of the items among the agents. Because exact envy-freeness is generally unattainable with indivisible items (e.g., allocating a single diamond to two agents), the literature focuses on relaxations. The most promising candidate solution concept is **Envy-Free up to Any Good (EFX)**.
 
 An allocation is **EFX** if no agent $i$ envies any other agent $j$ after the hypothetical removal of any single good $g$ from agent $j$'s bundle:
+
 $$
 v_i(A_i) \geq v_i(A_j \setminus \{g\}) \quad \text{for all } i, j \in N \text{ and for all } g \in A_j.
 $$
+
 ### Known Results
 
 **Positive Results:**
