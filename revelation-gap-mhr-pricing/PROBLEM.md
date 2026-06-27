@@ -21,17 +21,13 @@ on $F$.  For a distribution family $\mathcal{D}$ and mechanism class
 $\mathcal{M}$, write:
 
 $$
-\beta(\mathcal{M},\mathcal{D})
-  =
+\beta(\mathcal{M},\mathcal{D}) =
   \inf_{M\in \mathcal{M}}\sup_{F\in\mathcal{D}}
   \frac{\mathrm{OPT}_F(F)}{M(F)}.
 $$
 
-Here $M(F)$ is evaluated at the equilibrium selected for mechanism $M$ on
-distribution $F$.  If $\mathcal{M}_{\mathrm{rev}}$ is the
-truthful/revelation subclass and
-$\mathcal{M}_{\mathrm{all}}$ is the broader class of prior-independent mechanisms,
-the revelation gap is:
+Here $M(F)$ is evaluated at the equilibrium selected for mechanism $M$ on distribution $F$. If $\mathcal{M}\_{\mathrm{rev}}$ is the
+truthful/revelation subclass and $\mathcal{M}\_{\mathrm{all}}$ is the broader class of prior-independent mechanisms, the revelation gap is:
 
 $$
 \frac{\beta(\mathcal{M}_{\mathrm{rev}},\mathcal{D})}
@@ -128,7 +124,7 @@ $$
 ### Research Goal
 
 Identify the tight MHR revelation gap for one-sample revenue maximization.
-In the Feng--Hartline--Li one-bid/sample-bid formulation, this means closing
+In the Feng-Hartline-Li one-bid/sample-bid formulation, this means closing
 
 $$
 1.190
@@ -165,7 +161,7 @@ Concrete open questions:
 - Tang, Tao, and Wang, "Pricing with a Hidden Sample" (2026):
   https://arxiv.org/abs/2602.18038
 
-For the one-sample pricing problem, the Feng--Hartline--Li paper is the
+For the one-sample pricing problem, the Feng-Hartline-Li paper is the
 primary reference for the revelation-gap comparison.  The 2026 hidden-sample
 paper is best read as a related extension because it changes the mechanism
 format from one-bid/sample-pricing mechanisms to richer distribution-report or
