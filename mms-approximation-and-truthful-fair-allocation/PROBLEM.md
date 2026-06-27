@@ -16,12 +16,14 @@ The **maximin share** of agent $i$ with respect to $n$ agents and goods $M$ is
 $$
 \text{MMS}_i(n, M) = \max_{(A_1, \ldots, A_n)} \min_{j \in [n]} v_i(A_j),
 $$
+
 where the maximum is taken over all partitions of $M$ into $n$ bundles.
 
 An allocation $X = (X_1, \ldots, X_n)$ is an **$\alpha$-MMS allocation** if, for every agent $i \in N$,
 $$
 v_i(X_i) \geq \alpha \cdot \text{MMS}_i(n, M).
 $$
+
 It is known that for $n = 3$ additive agents, an exact MMS allocation (i.e., $\alpha = 1$) might not exist.
 
 ### Truthful Mechanisms

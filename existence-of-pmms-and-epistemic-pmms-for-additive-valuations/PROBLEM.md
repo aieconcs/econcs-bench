@@ -12,6 +12,7 @@ Consider a fair-division instance with a set $N$ of $n$ agents and a set $M$ of 
 $$
 v_i(S) = \sum_{g \in S} v_i(g)
 $$
+
 for every bundle $S \subseteq M$.
 
 For a set of goods $S$, the two-way maximin share of agent $i$ is defined as
@@ -19,6 +20,7 @@ For a set of goods $S$, the two-way maximin share of agent $i$ is defined as
 $$
 \mu_i(2,S)=\max_{(A,B)} \min\{v_i(A),v_i(B)\},
 $$
+
 where the maximum is taken over all partitions of $S$ into two bundles.
 
 ### PMMS
@@ -28,6 +30,7 @@ An allocation $X=(X_1,\ldots,X_n)$ is **pairwise maximin share fair** (PMMS) if,
 $$
 v_i(X_i)\geq \mu_i(2,X_i\cup X_j).
 $$
+
 Equivalently, if agents $i$ and $j$ pool their allocated goods and agent $i$ acts as the cutter in a cut-and-choose procedure, then agent $i$ should already receive at least the value she could guarantee herself.
 
 ### Epistemic PMMS
@@ -37,11 +40,13 @@ Epistemic PMMS (EPMMS) is a relaxation of PMMS inspired by the epistemic approac
 $$
 Y^i=(Y^i_1,\ldots,Y^i_n)
 $$
+
 such that $Y^i_i=X_i$ and agent $i$ is PMMS-satisfied with respect to $Y^i$. Formally, for every agent $j$,
 
 $$
 v_i(X_i)\geq \mu_i(2,Y^i_i\cup Y^i_j).
 $$
+
 Thus, each agent can certify the fairness of her own bundle by imagining a suitable repartition of the goods allocated to the other agents. The actual allocation need not satisfy PMMS.
 
 ### Known Results
