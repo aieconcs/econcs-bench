@@ -1,6 +1,6 @@
 ---
 name: Revenue Optimal DSIC Auction
-contributor: Jeff Jiang, David Parkes and Tonghan Wang
+contributor: Yanchen Jiang, David Parkes and Tonghan Wang
 ---
 
 ## Provably Revenue Optimal DSIC Sealed-Bid Auctions
@@ -15,37 +15,36 @@ $v_i(S)=\sum\_{j\in S}v_i(j)$, and **unit-demand valuations**, where
 $v_i(S)=\max\_{j\in S}v_i(j)$.
 
 Valuation $v_i$ is drawn independently from a known distribution $F_i$ over
-$V_i$, with $v_i(j)\in[0,v_{\max}]$ for all $i,j$. Let $\bm F=(F_1,\ldots,F_n)$,
-$V=\prod_i V_i$, and write $\bm v_i=(v_i(1),\ldots,v_i(m))$.
+$V_i$, with $v_i(j)\in[0,v_{\max}]$ for all $i,j$. Let $\mathbf{F}=(F_1,\ldots,F_n)$,
+$V=\prod_i V_i$, and write $\mathbf{v}_i=(v_i(1),\ldots,v_i(m))$.
 
 An auction is a pair $(g,p)$, where $g:V\rightarrow \mathcal X$ is a feasible
 allocation rule and $p_i:V\rightarrow \mathbb{R}_{\ge 0}$ is bidder $i$'s
-payment rule. Let $g_i(\bm b)\subseteq M$ denote the bundle allocated to bidder
-$i$ at bid profile $\bm b=(b_1,\ldots,b_n)$. Bidder $i$'s utility is
-$u_i(v_i;\bm b)=v_i(g_i(\bm b))-p_i(\bm b)$. In full generality, the allocation
+payment rule. Let $g_i(\mathbf{b})\subseteq M$ denote the bundle allocated to bidder
+$i$ at bid profile $\mathbf{b}=(b_1,\ldots,b_n)$. Bidder $i$'s utility is
+$u_i(v_i;\mathbf{b})=v_i(g_i(\mathbf{b}))-p_i(\mathbf{b})$. In full generality, the allocation
 rule may be randomized.
 
 The auction is **dominant-strategy incentive compatible (DSIC)**, or
-**strategy-proof (SP)**, if $u_i(v_i;(v_i,\bm b\_{-i}))\geq u_i(v_i;(b_i,\bm
-b\_{-i}))$ for all $i\in N$, $v_i,b_i\in V_i$, and $\bm b\_{-i}\in V\_{-i}$. It is
-**individually rational (IR)** if $u_i(v_i;(v_i,\bm b\_{-i}))\geq 0$ for all $i\in
-N$, $v_i\in V_i$, and $\bm b\_{-i}\in V\_{-i}$.
+**strategy-proof (SP)**, if $u_i(v_i;(v_i,\mathbf{b}\_{-i}))\geq u_i(v_i;(b_i,\mathbf{b}\_{-i}))$ for all $i\in N$, $v_i,b_i\in V_i$, and $\mathbf{b}\_{-i}\in V\_{-i}$. It is
+**individually rational (IR)** if $u_i(v_i;(v_i,\mathbf{b}\_{-i}))\geq 0$ for all $i\in
+N$, $v_i\in V_i$, and $\mathbf{b}\_{-i}\in V\_{-i}$.
 
 The optimal auction design problem is to identify a DSIC and IR auction
 maximizing expected revenue:
 
 $$
-\mathcal{R}(\bm F)=\sup_{(g,p)\in \mathrm{DSIC}\cap \mathrm{IR}}\mathbb{E}_{\bm v\sim \bm F}\left[\sum_{i=1}^n p_i(\bm v)\right].
+\mathcal{R}(\mathbf{F})=\sup_{(g,p)\in \mathrm{DSIC}\cap \mathrm{IR}}\mathbb{E}_{\mathbf{v}\sim \mathbf{F}}\left[\sum_{i=1}^n p_i(\mathbf{v})\right].
 $$
 
 ### Research Goal
 
-(1) **Computational Goal**: For some continuous distribution $\bm F$, some $n>1$
+(1) **Computational Goal**: For some continuous distribution $\mathbf{F}$, some $n>1$
    and $m>1$, learn an auction $(g^\star,p^\star)$ expressed by neural networks
-   or other representations such that $\mathbb{E}_{\bm v\sim \bm F}\left[\sum_i
-   p_i^\star(\bm v)\right]=\mathcal{R}(\bm F)$, together with a rigorous proof
+   or other representations such that $\mathbb{E}_{\mathbf{v}\sim \mathbf{F}}\left[\sum_i
+   p_i^\star(\mathbf{v})\right]=\mathcal{R}(\mathbf{F})$, together with a rigorous proof
    of DSIC, IR, and revenue optimality.
-(2) **Characterization Goal**: For some continuous distribution $\bm F$, some
+(2) **Characterization Goal**: For some continuous distribution $\mathbf{F}$, some
    $n>1$ and $m>1$, give an explicit characterization of a revenue-optimal DSIC
    and IR auction $(g^\star,p^\star)$.
 
