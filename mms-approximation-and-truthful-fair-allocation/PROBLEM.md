@@ -7,7 +7,7 @@ contributor: Moshe Babaioff
 
 ### Problem Description
 
-Consider a fair-division instance with a set $N$ of $n$ agents and a set $M$ of indivisible goods. Each agent $i \in N$ has an additive valuation function $v_i : 2^M \rightarrow \mathbb{R}_{\geq 0}$, meaning that $v_i(\emptyset) = 0$, $v_i(\{g\}) \geq 0$ for every good $g \in M$, and $v_i(S) = \sum_{g \in S} v_i(\{g\})$ for every bundle $S \subseteq M$.
+Consider a fair-division instance with a set $N$ of $n$ agents and a set $M$ of indivisible goods. Each agent $i \in N$ has an additive valuation function $v\_i : 2^M \rightarrow \mathbb{R}\_{\geq 0}$, meaning that $v\_i(\emptyset) = 0$, $v\_i(\{g\}) \geq 0$ for every good $g \in M$, and $v\_i(S) = \sum\_{g \in S} v\_i(\{g\})$ for every bundle $S \subseteq M$.
 
 ### Maximin Share (MMS)
 
