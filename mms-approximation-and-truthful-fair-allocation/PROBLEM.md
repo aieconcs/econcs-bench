@@ -43,7 +43,7 @@ Exact MMS allocations do not always exist, even for three additive agents (Kurok
 
 - **Deterministic truthful mechanisms.** Babaioff and Manaker Morag (2025) study the limits of fairness achievable by deterministic truthful mechanisms. Their results are based on a characterization that requires the mechanism to be "non-bossy" and "neutral." Under these assumptions, they establish bounds on the best MMS approximation achievable by deterministic truthful mechanisms for $n$ additive agents (when goods can be left unallocated). It is open whether removing these structural restrictions enables better guarantees. Earlier work by Amanatidis et al. (2017) showed that 2-agent deterministic truthful mechanisms that allocate all goods cannot be fair.
 
-- **Randomized TIE mechanisms.** Babaioff, Feige, Manaker, and Morag (2026) show that a truthful-in-expectation mechanism can achieve a $1/\log(n)$ ex-post MMS guarantee. Bu and Tao (2025) show that a TIE mechanism can achieve a $1/n$ MMS guarantee.
+- **Randomized TIE mechanisms.** Babaioff, Feige, and Manaker Morag (2026) show that a truthful-in-expectation mechanism can achieve a $1/\log(n)$ ex-post MMS guarantee. Bu and Tao (2025) show that a TIE mechanism can achieve a $1/n$ MMS guarantee.
 
 ### Research Goals
 
@@ -55,13 +55,13 @@ Specifically:
 
 **Open Problem 2a.** What is the best MMS approximation that a deterministic truthful mechanism can obtain for $n$ additive agents (when goods can be left unallocated)? In particular, do the known bounds (Babaioff and Manaker Morag, 2025), which rely on non-bossiness and neutrality, extend to all deterministic truthful mechanisms?
 
-**Open Problem 2b.** What is the best MMS approximation that a randomized truthful-in-expectation mechanism can ensure? The best known result achieves a $1/\log(n)$ ex-post MMS guarantee (Babaioff, Feige, Manaker, and Morag, 2026). Can this be improved, and what is achievable by polynomial-time mechanisms?
+**Open Problem 2b.** What is the best MMS approximation that a randomized truthful-in-expectation mechanism can ensure? The best known result achieves a $1/\log(n)$ ex-post MMS guarantee (Babaioff, Feige, and Manaker Morag, 2026). Can this be improved, and what is achievable by polynomial-time mechanisms?
 
 ### Key References
 
 - Moshe Babaioff and Noam Manaker Morag. "On Truthful Mechanisms without Pareto-efficiency: Characterizations and Fairness". In: Proceedings of the 26th ACM Conference on Economics and Computation. 2025, p. 447.
 
-- Moshe Babaioff, Uriel Feige, Shai Manaker, and Morag (2026). Truthful fair allocation mechanisms.
+- Moshe Babaioff, Uriel Feige, and Noam Manaker Morag. "Truthful-in-Expectation Mechanisms for MMS Approximation". 2026. arXiv: 2604.27211 [cs.GT]. https://arxiv.org/abs/2604.27211.
 
 - Xin Huang and Shengwei Zhou. An FPTAS for 7/9-Approximation to Maximin Share Allocations. 2025. arXiv: 2511.13056 [cs.GT]. https://arxiv.org/abs/2511.13056.
 
