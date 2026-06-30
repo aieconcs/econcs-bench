@@ -7,7 +7,7 @@ contributor: Yiling Chen
 
 ### Problem Description
 
-A Bayesian information structure consists of a decision-relevant random event $E$, $n$ random base signals $A_1,\ldots, A_n$, and a common prior distribution $P$ over $(E,A_1,\ldots,A_n)$. A decision maker observes the realization of some signal or combination of signals, updates their belief about $E$ by Bayes' rule, and then chooses an optimal action.
+A Bayesian information structure consists of a decision-relevant random event $E$, $n$ random base signals $A\_1,\ldots, A\_n$, and a common prior distribution $P$ over $(E,A\_1,\ldots,A\_n)$. A decision maker observes the realization of some signal or combination of signals, updates their belief about $E$ by Bayes' rule, and then chooses an optimal action.
 
 Without loss of generality, one can view general decision problems in terms of proper scoring rules. Equivalently, the decision maker has a convex expected score function
 
@@ -81,7 +81,7 @@ A satisfactory solution could take any of the following forms.
 
 1. **Structural characterization.** Give necessary and sufficient conditions, or sharp sufficient conditions with meaningful converses, stated directly in terms of the joint distribution $P(E,A_1,\ldots,A_n)$ and the convex geometry of $G$.
 
-2. **Posterior-geometric characterization.** Characterize substitutes and complements through the arrangement of posterior beliefs $p_{a_S}$ in $\Delta(E)$ and the Bregman divergence $D_G$. For example, identify when learning one signal causes a posterior movement that is a mean-preserving contraction or expansion, in the relevant Bregman geometry, after conditioning on other information.
+2. **Posterior-geometric characterization.** Characterize substitutes and complements through the arrangement of posterior beliefs $p\_{a\_S}$ in $\Delta(E)$ and the Bregman divergence $D\_G$. For example, identify when learning one signal causes a posterior movement that is a mean-preserving contraction or expansion, in the relevant Bregman geometry, after conditioning on other information.
 
 3. **Algorithmic certification.** Given an explicit finite information structure and a succinct description of $G$, design an efficient procedure that either certifies weak, moderate, or strong substitutes/complements or outputs a counterexample inequality or garbling.
 
