@@ -79,7 +79,7 @@ is weakly, moderately, or strongly submodular or supermodular on the relevant si
 
 A satisfactory solution could take any of the following forms.
 
-1. **Structural characterization.** Give necessary and sufficient conditions, or sharp sufficient conditions with meaningful converses, stated directly in terms of the joint distribution $P(E,A_1,\ldots,A_n)$ and the convex geometry of $G$.
+1. **Structural characterization.** Give necessary and sufficient conditions, or sharp sufficient conditions with meaningful converses, stated directly in terms of the joint distribution $P(E,A\_1,\ldots,A\_n)$ and the convex geometry of $G$.
 
 2. **Posterior-geometric characterization.** Characterize substitutes and complements through the arrangement of posterior beliefs $p\_{a\_S}$ in $\Delta(E)$ and the Bregman divergence $D\_G$. For example, identify when learning one signal causes a posterior movement that is a mean-preserving contraction or expansion, in the relevant Bregman geometry, after conditioning on other information.
 
