@@ -16,6 +16,7 @@ Benchmark suite of open research challenges in Economics and Computation (EconCS
 | EFX Approximation and Charity | Simina Branzei | [efx-approximation-and-charity](efx-approximation-and-charity/PROBLEM.md) |
 | EFX for Additive Valuations | Simina Branzei and Ariel Procaccia | [efx-additive-existence](efx-additive-existence/PROBLEM.md) |
 | Existence of PMMS and Epistemic PMMS for Additive Valuations | Michal Feldman | [existence-of-pmms-and-epistemic-pmms-for-additive-valuations](existence-of-pmms-and-epistemic-pmms-for-additive-valuations/PROBLEM.md) |
+| Informational Substitutes and Complements | Yiling Chen | [informational-substitutes-complements](informational-substitutes-complements/PROBLEM.md) |
 | Matroid Intersection Prophet Inequalities | Matt Weinberg | [matroid-intersection-prophet-inequality](matroid-intersection-prophet-inequality/PROBLEM.md) |
 | MMS Approximation and Truthful Fair Allocation | Moshe Babaioff | [mms-approximation-and-truthful-fair-allocation](mms-approximation-and-truthful-fair-allocation/PROBLEM.md) |
 | Online Submodular Welfare in Random Order | Vahab Mirrokni | [online-submodular-welfare-in-random-order](online-submodular-welfare-in-random-order/PROBLEM.md) |
