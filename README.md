@@ -2,6 +2,19 @@
 
 Benchmark suite of open research challenges in Economics and Computation (EconCS). This repository is associated with the workshop on [AI-Driven Research in EconCS](https://sites.google.com/corp/view/aieconcs26/) held at [EC 2026](https://ec26.sigecom.org/).
 
+## Contributing
+
+Open problems can be submitted directly via pull requests to the GitHub repository.
+
+Each open problem has a folder with a descriptive name, and within it a `PROBLEM.md` file describing the problem. Each file should have preamble metadata in YAML format. The name of the problem is expected, but listing the contributor is optional. For example:
+
+```markdown
+---
+name: Submodular Welfare Maximization with Demand Oracle
+contributor: Renato Paes Leme
+---
+```
+
 ## Benchmark Problems
 
 | Problem Name | Contributor | Folder / Details |
