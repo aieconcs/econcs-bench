@@ -6,14 +6,26 @@ Benchmark suite of open research challenges in Economics and Computation (EconCS
 
 Open problems can be submitted directly via pull requests to the GitHub repository.
 
-Each open problem has a folder with a descriptive name, and within it a `PROBLEM.md` file describing the problem. Each file should have preamble metadata in YAML format. The name of the problem is expected, but listing the contributor is optional. For example:
+Each open problem has a folder with a descriptive name, and within it a `PROBLEM.md` file describing the problem. Each file should have preamble metadata in YAML format. The name of the problem is expected, but the contributor and rating fields are optional. For example:
 
-```markdown
+```yaml
 ---
 name: Submodular Welfare Maximization with Demand Oracle
 contributor: Renato Paes Leme
+rating: Challenging
 ---
 ```
+
+### Rating Rubric
+
+Submitters can optionally include a `rating` field in the metadata to indicate the difficulty of the problem. The rating levels are:
+
+| Level | Submitter's Perspective | Expected Effort | Technical Barrier |
+| :--- | :--- | :--- | :--- |
+| **Approachable** | "The path forward seems relatively clear, but it needs focused execution." | A solid graduate student project or short paper. | Low. Likely solvable with known techniques. |
+| **Challenging** | "This will require a dedicated, full-scale research effort." | A standard main-track conference paper. | Medium. Needs novel combinations of existing tools. |
+| **Hard** | "I suspect our current standard tools are insufficient for this. In my view, this touches on foundational barriers..." | A major, sustained effort. Unpredictable. | High to Very High. Requires inventing new techniques or a new paradigm. |
+| **Unspecified** | Rating not provided. | N/A | N/A |
 
 ## Benchmark Problems
 
