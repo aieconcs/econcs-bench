@@ -18,7 +18,7 @@ rating: Challenging
 
 ### Rating Rubric
 
-Submitters can optionally include a `rating` field in the metadata to indicate the difficulty of the problem. The rating levels are:
+Submitters can optionally include a `rating` field in the metadata to indicate the difficulty of the problem. The rating levels are as follows:
 
 | Level | Submitter's Perspective | Expected Effort | Technical Barrier |
 | :--- | :--- | :--- | :--- |
