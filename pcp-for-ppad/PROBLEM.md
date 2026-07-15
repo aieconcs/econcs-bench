@@ -1,6 +1,7 @@
 ---
 name: PCP for PPAD
 contributor: Aviad Rubinstein
+rating: Hard
 ---
 
 ## A PCP Theorem for PPAD

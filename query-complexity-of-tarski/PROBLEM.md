@@ -1,6 +1,7 @@
 ---
 name: Query Complexity of Tarski
 contributor: Aviad Rubinstein
+rating: Hard
 ---
 
 ## Query Complexity of Tarski Fixed Points
