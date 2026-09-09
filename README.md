@@ -4,17 +4,64 @@ Benchmark suite of open research challenges in Economics and Computation (EconCS
 
 ## Contributing
 
-Open problems can be submitted directly via pull requests to the GitHub repository.
+We welcome submissions of open research challenges in Economics and Computation from the community. Open problems can be submitted directly via pull requests to the GitHub repository.
 
-Each open problem has a folder with a descriptive name, and within it a `PROBLEM.md` file describing the problem. Each file should have preamble metadata in YAML format. The name of the problem is expected, but the contributor and rating fields are optional. For example:
+### Step-by-Step Submission Guide
 
-```yaml
----
-name: Submodular Welfare Maximization with Demand Oracle
-contributor: Renato Paes Leme
-rating: Challenging
----
+#### 1. Fork and Clone the Repository
+1. Fork [aieconcs/econcs-bench](https://github.com/aieconcs/econcs-bench) on GitHub to your account.
+2. Clone your fork locally and create a new feature branch:
+
+```bash
+git clone https://github.com/<your-username>/econcs-bench.git
+cd econcs-bench
+git checkout -b add-<problem-name>
 ```
+
+#### 2. Create the Problem Directory and `PROBLEM.md`
+1. Create a new directory using lowercase kebab-case (e.g., `submodular-welfare-maximization`):
+
+```bash
+mkdir <problem-name>
+```
+
+2. Inside that directory, create a `PROBLEM.md` file. Each file must include YAML frontmatter at the top (`name` is required; `contributor` and `rating` are optional):
+
+```markdown
+---
+name: Problem Name
+contributor: Contributor Name
+rating: Approachable | Challenging | Hard
+---
+
+## Problem Title
+
+### Problem Description
+Describe the formal model, definitions, notations, and setting.
+
+### Known Results
+Summarize current state-of-the-art results, known upper/lower bounds, and relevant baselines.
+
+### Research Goal
+State the precise open question, target approximation ratio, or conjecture to prove/disprove.
+
+### Key References
+List references and paper links.
+```
+
+#### 3. Commit and Push
+Stage your problem folder, commit, and push the branch to your fork:
+
+```bash
+git add <problem-name>/PROBLEM.md
+git commit -m "Add <Problem Name> problem"
+git push -u origin add-<problem-name>
+```
+
+#### 4. Open a Pull Request
+1. Navigate to [aieconcs/econcs-bench](https://github.com/aieconcs/econcs-bench) on GitHub.
+2. Click **Compare & pull request** for your branch.
+3. Review your changes and submit the pull request.
 
 ### Rating Rubric
 
