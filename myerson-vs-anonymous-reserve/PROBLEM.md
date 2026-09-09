@@ -67,11 +67,11 @@ $$\mathrm{AR}(\mathbf F)\ge \mathrm{AP}(\mathbf F).$$
 
 Jin, Lu, Qi, Tang, and Xiao proved the tight bound
 
-$$\mathrm{OPT}(\mathbf F) \le \mathcal C^*\,\mathrm{AP}(\mathbf F), \qquad \mathcal C^*\approx 2.6202.$$
+$$\mathrm{OPT}(\mathbf F) \le \mathcal C^\ast\,\mathrm{AP}(\mathbf F), \qquad \mathcal C^\ast\approx 2.6202.$$
 
 Therefore, the current bounds are
 
-$$\boxed{2.15 \le \Gamma \le \mathcal C^*\approx 2.6202}.$$
+$$\boxed{2.15 \le \Gamma \le \mathcal C^\ast\approx 2.6202}.$$
 
 The upper bound does not use the extra competition revenue that distinguishes
 an anonymous-reserve auction from anonymous posted pricing.
