@@ -22,7 +22,7 @@ anonymous: every bidder faces the same reserve.
 
 Define the worst-case revenue gap
 
-$$\Gamma = \sup_{\substack{n\ge 1\\F_1,\ldots,F_n\ \mathrm{regular}}} \frac{\mathrm{OPT}(\mathbf F)}{\mathrm{AR}(\mathbf F)}.$$
+$$\Gamma = \sup_{\substack{n\ge 1, \; F_1,\ldots,F_n\ \mathrm{regular}}} \frac{\mathrm{OPT}(\mathbf F)}{\mathrm{AR}(\mathbf F)}.$$
 
 The central question is:
 
@@ -84,7 +84,7 @@ constructions.
 Related progress would include:
 
 - improving either side of the interval $[2.15, 2.6202]$;
-- determining the fixed-$n$ gap $\Gamma_n = \sup_{F_1,\ldots,F_n\ \mathrm{regular}} \frac{\mathrm{OPT}(\mathbf F)}{\mathrm{AR}(\mathbf F)}$;
+- determining the fixed $n$ gap $\Gamma_n = \sup_{F_1,\ldots,F_n\ \mathrm{regular}} \frac{\mathrm{OPT}(\mathbf F)}{\mathrm{AR}(\mathbf F)}$;
 - proving whether the global supremum requires an unbounded number of
   bidders; or
 - reducing the extremal problem to a tractable family of regular
