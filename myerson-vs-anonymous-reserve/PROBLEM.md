@@ -11,14 +11,14 @@ A seller has one item and $n$ risk-neutral bidders. Bidder $i$'s value
 $v_i$ is drawn independently from a known regular distribution $F_i$;
 the distributions need not be identical.
 
-Let $\operatorname{OPT}(\mathbf F)$ denote the expected revenue of Myerson's optimal auction for $\mathbf F=(F_1,\ldots,F_n)$.
+Let $\mathrm{OPT}(\mathbf F)$ denote the expected revenue of Myerson's optimal auction for $\mathbf F=(F_1,\ldots,F_n)$.
 
-For a reserve $r\ge 0$, let $\operatorname{AR}_r(\mathbf F)$ denote the expected revenue of the second-price auction that uses the same reserve $r$ for every bidder, and define
+For a reserve $r\ge 0$, let $\mathrm{AR}_r(\mathbf F)$ denote the expected revenue of the second-price auction that uses the same reserve $r$ for every bidder, and define
 
 $$
-\operatorname{AR}(\mathbf F)
+\mathrm{AR}(\mathbf F)
 =
-\sup_{r\ge 0}\operatorname{AR}_r(\mathbf F).
+\sup_{r\ge 0}\mathrm{AR}_r(\mathbf F).
 $$
 
 The reserve may depend on the full distribution profile, but it must be
@@ -30,8 +30,8 @@ $$
 \Gamma
 =
 \sup_{\substack{n\ge 1\\F_1,\ldots,F_n\ \mathrm{regular}}}
-\frac{\operatorname{OPT}(\mathbf F)}
-     {\operatorname{AR}(\mathbf F)}.
+\frac{\mathrm{OPT}(\mathbf F)}
+     {\mathrm{AR}(\mathbf F)}.
 $$
 
 The central question is:
@@ -73,7 +73,7 @@ number of bidders tends to infinity.
 The best known upper bound follows from anonymous pricing. Let
 
 $$
-\operatorname{AP}(\mathbf F)
+\mathrm{AP}(\mathbf F)
 =
 \sup_{p\ge 0}
 p\left(1-\prod_i F_i(p)\right)
@@ -83,15 +83,15 @@ be the optimal anonymous posted-price revenue. An anonymous-reserve auction
 with reserve $p$ earns at least the corresponding anonymous posted-price revenue, so
 
 $$
-\operatorname{AR}(\mathbf F)\ge \operatorname{AP}(\mathbf F).
+\mathrm{AR}(\mathbf F)\ge \mathrm{AP}(\mathbf F).
 $$
 
 Jin, Lu, Qi, Tang, and Xiao proved the tight bound
 
 $$
-\operatorname{OPT}(\mathbf F)
+\mathrm{OPT}(\mathbf F)
 \le
-\mathcal C^*\,\operatorname{AP}(\mathbf F),
+\mathcal C^*\,\mathrm{AP}(\mathbf F),
 \qquad
 \mathcal C^*\approx 2.6202.
 $$
@@ -119,7 +119,7 @@ constructions.
 Related progress would include:
 
 - improving either side of the interval $[2.15, 2.6202]$;
-- determining the fixed-$n$ gap $\Gamma_n = \sup_{F_1,\ldots,F_n\ \mathrm{regular}} \frac{\operatorname{OPT}(\mathbf F)}{\operatorname{AR}(\mathbf F)}$;
+- determining the fixed-$n$ gap $\Gamma_n = \sup_{F_1,\ldots,F_n\ \mathrm{regular}} \frac{\mathrm{OPT}(\mathbf F)}{\mathrm{AR}(\mathbf F)}$;
 - proving whether the global supremum requires an unbounded number of
   bidders; or
 - reducing the extremal problem to a tractable family of regular
