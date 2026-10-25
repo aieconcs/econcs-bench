@@ -57,25 +57,31 @@ PCP theorem:
 More concretely, the **PCP-for-PPAD conjecture** (introduced by Babichenko,  
 Papadimitriou, and Rubinstein, 2016\) asserts that the $(\varepsilon,  
 \delta)$-**Generalized Circuit** problem — a relaxation of the standard  
-PPAD-complete Generalized Circuit problem in which both the "almost-fixedness"  
-and "closeness" parameters are allowed to be positive constants — remains  
-PPAD-hard.
+PPAD-complete Generalized Circuit problem in which both the per-gate error  
+$\varepsilon$ and the fraction $\delta$ of gates allowed to fail are positive  
+constants — remains PPAD-hard.
 
-**The $(\varepsilon, \delta)$-Generalized Circuit Problem**: Given a  
-(succinctly described) arithmetic circuit $C$ over $[0,1]^n$ with Lipschitz  
-constant at most $1$, find a point $x \in [0,1]^n$ such that each gate $g$ of  
-the circuit satisfies its defining constraint to within an additive  
-$\varepsilon$ error, and the output is within $\delta$ of a fixed point. For  
-$\varepsilon = \delta = 0$ this is the standard PPAD-complete problem. The  
-conjecture is that the problem remains PPAD-hard for some constants $\varepsilon,  
-\delta > 0$.
+**The $(\varepsilon, \delta)$-Generalized Circuit Problem**: A generalized  
+circuit consists of nodes, each taking a value in $[0,1]$, and gates (e.g.,  
+constant, addition, subtraction, scaling by a constant, and comparison), each of  
+which constrains the value of its output node as a function of the values of  
+its input nodes; cycles are allowed. Given a generalized circuit with $n$ nodes  
+and $m$ gates, find an assignment of values in $[0,1]$ to the nodes such that all  
+but at most $\delta m$ of the gates are $\varepsilon$-satisfied, i.e., satisfy  
+their defining constraint to within an additive error of $\varepsilon$. The  
+failing gates may be arbitrary. For $\delta = 0$ this is the $\varepsilon$-Generalized  
+Circuit problem, which is PPAD-complete for $\varepsilon = 1/\mathrm{poly}(n)$  
+and PPAD-hard even for some constant $\varepsilon > 0$ (see Known Results). The  
+conjecture is that the problem remains PPAD-hard for some constants  
+$\varepsilon, \delta > 0$.
 
 ### Known Results
 
 **Hardness results for Generalized Circuit (equivalently, Nash equilibrium):**
 
 The following results establish PPAD-hardness of the $(\varepsilon,  
-\delta)$-Generalized Circuit problem for progressively larger $\varepsilon$.  
+\delta)$-Generalized Circuit problem with $\delta = 0$ for progressively larger  
+$\varepsilon$.  
 They are stated here in terms of GCircuit; via standard reductions they are  
 essentially equivalent to analogous results for $\varepsilon$-Nash equilibrium  
 in constant-degree, constant-action polymatrix games.
