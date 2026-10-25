@@ -33,7 +33,7 @@ Benchmark suite of open research challenges in Economics and Computation (EconCS
 | Signal-Preserving 2/3-Approximation for Explainable Linear Information Design | Yiling Chen and Tao Lin | Resolved (preprint) | None | [signal-preserving-explainable-information-design](signal-preserving-explainable-information-design/PROBLEM.md) |
 | Static Posted Pricing for Multi-Unit Combinatorial Auctions | Brendan Lucier | Open | — | [posted-pricing-multi-unit-xos](posted-pricing-multi-unit-xos/PROBLEM.md) |
 | Submodular Welfare Maximization with Demand Oracle | Renato Paes Leme | Open | — | [submodular-welfare-maximization-with-demand-oracle](submodular-welfare-maximization-with-demand-oracle/PROBLEM.md) |
-| Truthful Mechanism for Submodular CA | Sébastien Lahaie | Resolved (preprint) | None | [truthful-mechanism-for-submodular-ca](truthful-mechanism-for-submodular-ca/PROBLEM.md) |
+| Truthful Mechanism for Submodular CA | Sébastien Lahaie | Resolved (published) | None | [truthful-mechanism-for-submodular-ca](truthful-mechanism-for-submodular-ca/PROBLEM.md) |
 
 ## Contributing
 
@@ -115,8 +115,8 @@ The repository maintainers track claimed solutions in each problem's metadata. A
 | :--- | :--- |
 | `open` | No claimed solution (default). |
 | `partial` | Significant progress, but the research goal is not fully met. |
-| `resolved-preprint` | A full solution is claimed in a preprint that has not yet appeared in a peer-reviewed venue. |
-| `resolved-published` | A full solution has appeared in an authoritative peer-reviewed venue (e.g., a major conference or journal). |
+| `resolved-preprint` | A full solution is claimed in a preprint that has not yet been accepted to a peer-reviewed venue. |
+| `resolved-published` | A full solution has been accepted to or has appeared in an authoritative peer-reviewed venue (e.g., a major conference or journal). |
 
 Each claim is recorded under `claims`, for example:
 
@@ -127,6 +127,7 @@ claims:
     url: https://arxiv.org/abs/XXXX.XXXXX
     date: 2026-10-01
     venue: arXiv preprint
+    venue_url: https://...  # optional, e.g., the venue's accepted-papers page
     outcome: resolved       # resolved | partial
     ai_assisted: true       # true | false | unknown
     lean: none              # none | statement | partial | full
