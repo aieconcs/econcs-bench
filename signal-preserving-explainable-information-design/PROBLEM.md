@@ -1,9 +1,28 @@
 ---
 name: Signal-Preserving 2/3-Approximation for Explainable Linear Information Design
 contributor: Yiling Chen and Tao Lin
+status: resolved-preprint
+claims:
+  - ref: "Francesco Bacchiocchi, Tommaso Cesari, and Roberto Colomboni. No Extra Signals Needed: The Uniform Price of Explainable Information Design."
+    url: https://arxiv.org/abs/2607.20364
+    date: 2026-07-22
+    venue: arXiv preprint
+    outcome: resolved
+    ai_assisted: unknown
+    lean: none
 ---
 
 ## Signal-Preserving 2/3-Approximation for Explainable Linear Information Design
+
+> [!NOTE]
+> **Status: resolved (preprint).** Bacchiocchi, Cesari, and Colomboni
+> ([arXiv:2607.20364](https://arxiv.org/abs/2607.20364), July 2026) resolve the
+> open question: under the uniform prior and for every bounded utility function,
+> $\mathrm{OPT}^{\mathrm{part}}_I(K) \geq \frac{2}{3}\mathrm{OPT}_I(K)$ for every
+> $K \geq 3$, and this is tight.
+> *Qualifications:* the inequality fails for $K = 2$, where the tight ratio is
+> $1/2$, so the statement as posed ("for every integer $K \geq 2$") holds only for
+> $K \geq 3$. Not yet peer reviewed; no Lean formalization.
 
 
 ### Background

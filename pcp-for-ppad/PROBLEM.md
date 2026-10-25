@@ -2,9 +2,33 @@
 name: PCP for PPAD
 contributor: Aviad Rubinstein
 rating: Hard
+status: resolved-preprint
+claims:
+  - ref: "OpenAI. The PCP-for-PPAD conjecture: a quasilinear reduction."
+    url: https://github.com/openai/math/blob/main/preprints/The-PCP-for-PPAD-conjecture-a-quasilinear-reduction-September-25-2026/paper.pdf
+    date: 2026-09-25
+    venue: OpenAI Math Release preprint
+    outcome: resolved
+    ai_assisted: true
+    lean: partial
 ---
 
 ## A PCP Theorem for PPAD
+
+> [!NOTE]
+> **Status: resolved (preprint).** OpenAI
+> ([preprint](https://github.com/openai/math/blob/main/preprints/The-PCP-for-PPAD-conjecture-a-quasilinear-reduction-September-25-2026/paper.pdf),
+> September 2026, 147 pages) claims a proof of the quasilinear-size PCP-for-PPAD
+> conjecture of Babichenko, Papadimitriou, and Rubinstein, which implies the
+> research goal below. The claimed result gives fixed constants
+> $\varepsilon, \delta > 0$ and a deterministic polynomial-time reduction from
+> End-of-Line to generalized circuits of size $N(\log N)^{O(1)}$, such that any
+> assignment that $\varepsilon$-satisfies all but a $\delta$ fraction of the
+> gates yields an End-of-Line solution.
+> *Qualifications:* not peer reviewed. A
+> [partial Lean formalization](https://github.com/openai/math/blob/main/lean/OAI/Computability/GeneralizedCircuits/Mesh.lean)
+> states the main theorem and proves only supporting lemmas; the main result is
+> not machine-checked.
 
 ### Problem Description
 

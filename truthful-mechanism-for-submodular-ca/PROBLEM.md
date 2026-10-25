@@ -1,9 +1,29 @@
 ---
 name: Truthful Mechanism for Submodular CA
 contributor: Sebastien Lahaie
+status: resolved-preprint
+claims:
+  - ref: "Aviad Rubinstein and Sahil Singla. Improved Combinatorial Auctions with and without Samples."
+    url: https://arxiv.org/abs/2610.17517
+    date: 2026-10-13
+    venue: arXiv preprint
+    outcome: resolved
+    ai_assisted: true
+    lean: none
 ---
 
 ## Truthful Mechanism for Submodular Combinatorial Auctions: Closing the Gap to $O(\log \log m)$
+
+> [!NOTE]
+> **Status: resolved (preprint).** Rubinstein and Singla
+> ([arXiv:2610.17517](https://arxiv.org/abs/2610.17517), October 2026) give a
+> universally truthful mechanism achieving an $O(\log \log m)$-approximation for
+> XOS bidders, a superclass of submodular bidders, in the random-order and offline
+> models (their Theorem 1.2). This answers the question posed by Assadi,
+> Kesselheim, and Singla (SODA 2021).
+> *Qualifications:* Theorem 1.2 does not explicitly state the number of demand
+> queries used, so the polynomial-query requirement in the research goal remains
+> to be confirmed. Not yet peer reviewed; no Lean formalization.
 
 ### Problem Description
 

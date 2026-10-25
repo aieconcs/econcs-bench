@@ -2,9 +2,29 @@
 name: Query Complexity of Tarski
 contributor: Aviad Rubinstein
 rating: Hard
+status: resolved-preprint
+claims:
+  - ref: "Xi Chen, Ruiquan Gao, Yuhao Li, Aviad Rubinstein, and Mihalis Yannakakis. Tarski Fixed Points in Quasi-FPT Queries."
+    url: https://arxiv.org/abs/2610.07055
+    date: 2026-10-05
+    venue: arXiv preprint
+    outcome: resolved
+    ai_assisted: true
+    lean: none
 ---
 
 ## Query Complexity of Tarski Fixed Points
+
+> [!NOTE]
+> **Status: resolved (preprint).** Chen, Gao, Li, Rubinstein, and Yannakakis
+> ([arXiv:2610.07055](https://arxiv.org/abs/2610.07055), October 2026) show that
+> for every $d \geq 3$,
+> $\Omega\big((\log N)^{\frac{1}{2}\lceil \log d \rceil}\big) \leq \mathrm{Tarski}(N,d) \leq O\big(5^d (\log N)^{\lceil \log d \rceil}\big)$.
+> This answers the central question below in the negative: the query complexity
+> is $(\log N)^{\Theta(\log d)}$ rather than $\log^{\Theta(d)} N$, and in
+> particular it is $\mathrm{poly}(\log N)$ for every fixed $d$ (goal (2)).
+> *Qualifications:* a constant-factor gap remains in the exponent, as does the
+> $5^d$ fixed-parameter factor. Not yet peer reviewed; no Lean formalization.
 
 ### Problem Description
 
