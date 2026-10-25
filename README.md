@@ -33,7 +33,7 @@ Benchmark suite of open research challenges in Economics and Computation (EconCS
 | Signal-Preserving 2/3-Approximation for Explainable Linear Information Design | Yiling Chen and Tao Lin | Resolved (preprint) | None | [signal-preserving-explainable-information-design](signal-preserving-explainable-information-design/PROBLEM.md) |
 | Static Posted Pricing for Multi-Unit Combinatorial Auctions | Brendan Lucier | Open | — | [posted-pricing-multi-unit-xos](posted-pricing-multi-unit-xos/PROBLEM.md) |
 | Submodular Welfare Maximization with Demand Oracle | Renato Paes Leme | Open | — | [submodular-welfare-maximization-with-demand-oracle](submodular-welfare-maximization-with-demand-oracle/PROBLEM.md) |
-| Truthful Mechanism for Submodular CA | Sebastien Lahaie | Resolved (preprint) | None | [truthful-mechanism-for-submodular-ca](truthful-mechanism-for-submodular-ca/PROBLEM.md) |
+| Truthful Mechanism for Submodular CA | Sébastien Lahaie | Resolved (preprint) | None | [truthful-mechanism-for-submodular-ca](truthful-mechanism-for-submodular-ca/PROBLEM.md) |
 
 ## Contributing
 

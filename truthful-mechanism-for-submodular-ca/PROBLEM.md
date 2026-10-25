@@ -1,6 +1,6 @@
 ---
 name: Truthful Mechanism for Submodular CA
-contributor: Sebastien Lahaie
+contributor: Sébastien Lahaie
 status: resolved-preprint
 claims:
   - ref: "Aviad Rubinstein and Sahil Singla. Improved Combinatorial Auctions with and without Samples."
