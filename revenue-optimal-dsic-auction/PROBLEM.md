@@ -14,9 +14,11 @@ Valuations are continuous. We consider both **additive valuations**, where
 $v_i(S)=\sum\_{j\in S}v_i(j)$, and **unit-demand valuations**, where
 $v_i(S)=\max\_{j\in S}v_i(j)$.
 
-Valuation $v_i$ is drawn independently from a known distribution $F_i$ over
-$V_i$, with $v_i(j)\in[0,v_{\max}]$ for all $i,j$. Let $\mathbf{F}=(F_1,\ldots,F_n)$,
-$V=\prod_i V_i$, and write $\mathbf{v}_i=(v_i(1),\ldots,v_i(m))$.
+Valuation $v_{ij}$ is drawn independently from a known distribution $F_{ij}$ over
+$V_{ij}$, with $v_i(j)\in[0,v_{\max}]$ for all $i,j$. $F_{ij}$ must have support
+of positive measure on strictly positive values, for all $i,j$. Let $F_i = \prod_j F_{ij}$.
+Let $V_i = \prod_j V_{ij}$. Let $\mathbf{F}=(F_1,\ldots,F_n)$, $V=\prod_i V_i$,
+and write $\mathbf{v}_i=(v_i(1),\ldots,v_i(m))$.
 
 An auction is a pair $(g,p)$, where $g:V\rightarrow \mathcal X$ is a feasible
 allocation rule and $p_i:V\rightarrow \mathbb{R}_{\ge 0}$ is bidder $i$'s
@@ -39,14 +41,15 @@ $$
 
 ### Research Goal
 
-(1) **Computational Goal**: For some continuous distribution $\mathbf{F}$, some $n>1$
-   and $m>1$, learn an auction $(g^\star,p^\star)$ expressed by neural networks
-   or other representations such that $\mathbb{E}_{\mathbf{v}\sim \mathbf{F}}\left[\sum_i
-   p_i^\star(\mathbf{v})\right]=\mathcal{R}(\mathbf{F})$, together with a rigorous proof
-   of DSIC, IR, and revenue optimality.
-(2) **Characterization Goal**: For some continuous distribution $\mathbf{F}$, some
-   $n>1$ and $m>1$, give an explicit characterization of a revenue-optimal DSIC
-   and IR auction $(g^\star,p^\star)$.
+(1) **Computational Goal**: For some continuous distribution $\mathbf{F}$ with the
+   above product distribution structure, some $n>1$ and $m>1$, learn an auction
+   $(g^\star,p^\star)$ expressed by neural networks or other representations such
+   that $\mathbb{E}_{\mathbf{v}\sim \mathbf{F}}\left[\sum_i p_i^\star(\mathbf{v})\right]=\mathcal{R}(\mathbf{F})$,
+   together with a rigorous proof of DSIC, IR, and revenue optimality.
+
+(2) **Characterization Goal**: For some continuous distribution $\mathbf{F}$ with the
+   above product distribution structure, some $n>1$ and $m>1$, give an explicit
+   characterization of a revenue-optimal DSIC and IR auction $(g^\star,p^\star)$.
 
 ### Challenges
 
