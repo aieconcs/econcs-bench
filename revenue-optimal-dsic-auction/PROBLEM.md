@@ -1,9 +1,32 @@
 ---
 name: Revenue Optimal DSIC Auction
 contributor: Yanchen Jiang, David Parkes and Tonghan Wang
+status: partial
+claims:
+  - ref: "Boyu Liu, Zhengyang Liu, and Zihe Wang. Optimal Multi-Item Auctions with I.I.D. Values."
+    url: https://arxiv.org/abs/2610.11051
+    date: 2026-10-08
+    venue: arXiv preprint
+    outcome: partial
+    ai_assisted: true
+    lean: none
 ---
 
 ## Provably Revenue Optimal DSIC Sealed-Bid Auctions
+
+> [!NOTE]
+> **Status: partial progress.** Liu, Liu, and Wang
+> ([arXiv:2610.11051](https://arxiv.org/abs/2610.11051), October 2026) give an
+> explicit, deterministic auction that is optimal among all randomized DSIC and
+> ex-post IR mechanisms for additive bidders, for any $n \geq 1$ and $m \geq 1$,
+> when all item values are i.i.d. draws from a two-point distribution
+> $p\,\delta_a + (1-p)\,\delta_b$ with $0 < a < b$. Both the mechanism and its
+> revenue are computable in polynomial time. This extends Yao (2017), which covered
+> two items. They also show that computing the optimal revenue is #P-hard for
+> general finite-support distributions.
+> *Qualifications:* the research goals below ask for continuous distributions,
+> so this discrete (support size two) result does not resolve them. Not yet peer
+> reviewed; no Lean formalization.
 
 ### Problem Description
 

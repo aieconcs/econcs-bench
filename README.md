@@ -29,7 +29,7 @@ Benchmark suite of open research challenges in Economics and Computation (EconCS
 | Revelation Gap for MHR Pricing from One Sample | Jason Hartline | Open | — | [revelation-gap-mhr-pricing](revelation-gap-mhr-pricing/PROBLEM.md) |
 | Revelation Gap for Public-Budget Welfare Maximization | Jason Hartline | Open | — | [revelation-gap-public-budget-welfare](revelation-gap-public-budget-welfare/PROBLEM.md) |
 | Revenue Gap Between Myerson and Anonymous Reserves | Jerry Anunrojwong | Open | — | [myerson-vs-anonymous-reserve](myerson-vs-anonymous-reserve/PROBLEM.md) |
-| Revenue Optimal DSIC Auction | Yanchen Jiang, David Parkes, Tonghan Wang | Open | — | [revenue-optimal-dsic-auction](revenue-optimal-dsic-auction/PROBLEM.md) |
+| Revenue Optimal DSIC Auction | Yanchen Jiang, David Parkes, Tonghan Wang | Partial progress | None | [revenue-optimal-dsic-auction](revenue-optimal-dsic-auction/PROBLEM.md) |
 | Signal-Preserving 2/3-Approximation for Explainable Linear Information Design | Yiling Chen and Tao Lin | Resolved (preprint) | None | [signal-preserving-explainable-information-design](signal-preserving-explainable-information-design/PROBLEM.md) |
 | Static Posted Pricing for Multi-Unit Combinatorial Auctions | Brendan Lucier | Open | — | [posted-pricing-multi-unit-xos](posted-pricing-multi-unit-xos/PROBLEM.md) |
 | Submodular Welfare Maximization with Demand Oracle | Renato Paes Leme | Open | — | [submodular-welfare-maximization-with-demand-oracle](submodular-welfare-maximization-with-demand-oracle/PROBLEM.md) |
