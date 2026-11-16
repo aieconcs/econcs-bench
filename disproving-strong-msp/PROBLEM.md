@@ -1,9 +1,48 @@
 ---
 name: Disproving Strong MSP
 contributor: Anonymous Contribution
+status: resolved-preprint
+claims:
+  - ref: "Zhiyi Huang. Settling the Matroid Secretary Problem."
+    url: https://arxiv.org/abs/2609.30421
+    date: 2026-09-24
+    venue: arXiv preprint
+    outcome: resolved
+    ai_assisted: true
+    lean: none
+  - ref: "Hamed Abdi, Kiarash Banihashem, MohammadTaghi Hajiaghayi, Zhiyi Huang, Danny Mittal, and Sahil Singla. As Easy as Rank One: Optimal Algorithms for Matroid Secretary and Single-Sample Matroid Prophet."
+    url: https://arxiv.org/abs/2611.08869
+    date: 2026-11-06
+    venue: arXiv preprint
+    outcome: resolved
+    ai_assisted: true
+    lean: none
 ---
 
 ## Disproving the Strong Matroid Secretary Conjecture
+
+> [!NOTE]
+> **Status: resolved (preprint).** The Strong Matroid Secretary Conjecture has
+> been *proved*, so the disproof sought below is impossible. Huang
+> ([arXiv:2609.30421](https://arxiv.org/abs/2609.30421), September 2026) gives an
+> ordinal algorithm, using only comparisons and independence queries on arrived
+> elements and running in expected polynomial time, that selects each element of
+> an optimal base with probability at least $1/e$ on every matroid. Hence
+> $\alpha^*(\mathcal{M}) \geq 1/e$ for all $\mathcal{M}$. Abdi, Banihashem,
+> Hajiaghayi, Huang, Mittal, and Singla
+> ([arXiv:2611.08869](https://arxiv.org/abs/2611.08869), November 2026) give a
+> unified treatment of this result. Earlier steps: Singla
+> ([arXiv:2609.14555](https://arxiv.org/abs/2609.14555)) proved the (weak)
+> Matroid Secretary Conjecture with a $1/4$ guarantee; Chan, Lin, and Wang
+> ([arXiv:2609.17782](https://arxiv.org/abs/2609.17782)) improved this to about
+> $1/3.1462$; and Abdi, Banihashem, Hajiaghayi, and Mittal
+> ([arXiv:2609.19118](https://arxiv.org/abs/2609.19118)) and Bérczi, Dughmi,
+> Livanos, Soto, and Verdugo ([arXiv:2609.20797](https://arxiv.org/abs/2609.20797))
+> proved the strong conjecture for linear matroids.
+> *Qualifications:* the conjecture was proved rather than disproved, so both the
+> primary goal and the ordinal variant below are answered in the negative (the
+> algorithm above is itself ordinal). Not yet peer reviewed; no Lean
+> formalization of the general result.
 
 ### Problem Description
 

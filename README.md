@@ -11,10 +11,10 @@ Benchmark suite of open research challenges in Economics and Computation (EconCS
 | :--- | :--- | :--- | :--- | :--- |
 | Bayesian Security Games | Vincent Conitzer | Open | — | [bayesian-security-games](bayesian-security-games/PROBLEM.md) |
 | Black-Box Reductions to DSIC Mechanism Design | Brendan Lucier | Open | — | [black-box-dsic-mechanism-design](black-box-dsic-mechanism-design/PROBLEM.md) |
-| Complexity of Envy-Free Cake Cutting | Ariel Procaccia | Open | — | [envy-free-cake-cutting-complexity](envy-free-cake-cutting-complexity/PROBLEM.md) |
+| Complexity of Envy-Free Cake Cutting | Ariel Procaccia | Partial progress | Full | [envy-free-cake-cutting-complexity](envy-free-cake-cutting-complexity/PROBLEM.md) |
 | Computing the Meaning of a Game | Christos Papadimitriou | Open | — | [meaning-of-a-game](meaning-of-a-game/PROBLEM.md) |
 | Deterministic CA for Subadditive Bidders | Shahar Dobzinski | Open | — | [deterministic-subadditive-ca](deterministic-subadditive-ca/PROBLEM.md) |
-| Disproving Strong MSP | Anonymous Contribution | Open | — | [disproving-strong-msp](disproving-strong-msp/PROBLEM.md) |
+| Disproving Strong MSP | Anonymous Contribution | Resolved (preprint) | None | [disproving-strong-msp](disproving-strong-msp/PROBLEM.md) |
 | DSIC Mechanisms for Multi-Unit Auctions | Noam Nisan | Open | — | [multi-unit-dsic](multi-unit-dsic/PROBLEM.md) |
 | EFX Approximation and Charity | Simina Branzei | Open | — | [efx-approximation-and-charity](efx-approximation-and-charity/PROBLEM.md) |
 | EFX for Additive Valuations | Simina Branzei and Ariel Procaccia | Open | — | [efx-additive-existence](efx-additive-existence/PROBLEM.md) |
